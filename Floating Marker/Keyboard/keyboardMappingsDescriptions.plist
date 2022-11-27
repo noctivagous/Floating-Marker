@@ -1,0 +1,1884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0</key>
+	<dict>
+		<key>name</key>
+		<string>End</string>
+		<key>buttonName</key>
+		<string>End</string>
+		<key>functionString</key>
+		<string>endKeyPress</string>
+		<key>description</key>
+		<string>Deposits any drawing that is taking place onto the drawing page.</string>
+		<key>buttonBackgroundColor</key>
+		<string>148,17,0</string>
+		<key>buttonBackgroundImage</key>
+		<string>endKbImg</string>
+		<key>buttonFontColor</key>
+		<string>255,64,255</string>
+	</dict>
+	<key>3</key>
+	<dict>
+		<key>name</key>
+		<string>B-Spline</string>
+		<key>buttonName</key>
+		<string>BSpline</string>
+		<key>functionString</key>
+		<string>bSplineKeyPress</string>
+		<key>description</key>
+		<string>Draws a bSpline</string>
+		<key>buttonBackgroundColor</key>
+		<string>137,34,134</string>
+		<key>buttonFontColor</key>
+		<string>255,252,121</string>
+		<key>isDrawingButton</key>
+		<true/>
+	</dict>
+	<key>45</key>
+	<dict>
+		<key>name</key>
+		<string>Nozzle Subtract</string>
+		<key>buttonName</key>
+		<string>NozzleSubtract</string>
+		<key>functionString</key>
+		<string>nozzleSubtractKeyPress</string>
+		<key>description</key>
+		<string>For whatever mode the nozzle is in, subtracts values or elements from the result.</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>46</key>
+	<dict>
+		<key>name</key>
+		<string>Nozzle Add</string>
+		<key>buttonName</key>
+		<string>NozzleAdd</string>
+		<key>functionString</key>
+		<string>nozzleAddKeyPress</string>
+		<key>description</key>
+		<string>For whatever mode the nozzle is in, adds values or elements to the result.</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>^4</key>
+	<dict>
+		<key>name</key>
+		<string>Shading Shapes Mode Toggle</string>
+		<key>buttonName</key>
+		<string>shadingShapesModeToggle</string>
+		<key>functionString</key>
+		<string>shadingShapesModeToggleKeyPress</string>
+		<key>description</key>
+		<string>Turns the shading shapes mode on and off.</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>^42</key>
+	<dict>
+		<key>name</key>
+		<string>Push Palette To Selected</string>
+		<key>buttonName</key>
+		<string>PushPaletteToSelected</string>
+		<key>functionString</key>
+		<string>pushPaletteToSelectedKeyPress</string>
+		<key>description</key>
+		<string>Pushes the palette&apos;s settings to the selected object(s).</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>$42</key>
+	<dict>
+		<key>name</key>
+		<string>Pull Selected To Palette </string>
+		<key>buttonName</key>
+		<string>PullSelectedToPalette</string>
+		<key>functionString</key>
+		<string>pullSelectedToPaletteKeyPress</string>
+		<key>description</key>
+		<string>Pulls the selected object settings to the palette.</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>@2</key>
+	<dict>
+		<key>name</key>
+		<string>Only Stroke</string>
+		<key>buttonName</key>
+		<string>OnlyStroke</string>
+		<key>functionString</key>
+		<string>onlyStrokeKeyPress</string>
+		<key>description</key>
+		<string>Makes the current representation mode a stroke.</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>@3</key>
+	<dict>
+		<key>name</key>
+		<string>Only Fill</string>
+		<key>buttonName</key>
+		<string>OnlyFill</string>
+		<key>functionString</key>
+		<string>onlyFillKeyPress</string>
+		<key>description</key>
+		<string>Makes the current representation mode a solid fill.</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>@5</key>
+	<dict>
+		<key>name</key>
+		<string>Fill Stroke</string>
+		<key>buttonName</key>
+		<string>FillStroke</string>
+		<key>functionString</key>
+		<string>fillStrokeKeyPress</string>
+		<key>description</key>
+		<string>Makes the current representation mode a solid fill and stroked.</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>@11</key>
+	<dict>
+		<key>name</key>
+		<string>Fill Stroke Split </string>
+		<key>buttonName</key>
+		<string>Fill Stroke Split </string>
+		<key>functionString</key>
+		<string>fillStrokeSplitKeyPress</string>
+		<key>description</key>
+		<string>Makes the current representation mode the custom setting.</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>~45</key>
+	<dict>
+		<key>name</key>
+		<string>Noising Of Lines Toggle</string>
+		<key>buttonName</key>
+		<string>NoisingOfLinesToggle</string>
+		<key>functionString</key>
+		<string>noisingOfLinesToggleKeyPress</string>
+		<key>description</key>
+		<string>When this mode is toggled on, drawn strokes will have their line processed with perlin noise.</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>34</key>
+	<dict>
+		<key>name</key>
+		<string>Ellipse Brush Tip</string>
+		<key>buttonName</key>
+		<string>EllipseBrushTip</string>
+		<key>functionString</key>
+		<string>ellipseBrushTipKeyPress</string>
+		<key>description</key>
+		<string>Changes the brush tip to an ellipse. Produces brush stroke shapes (i.e. closed bezier paths).</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>31</key>
+	<dict>
+		<key>name</key>
+		<string>Rectangle Brush Tip</string>
+		<key>buttonName</key>
+		<string>RectangleBrushTip</string>
+		<key>functionString</key>
+		<string>rectangleBrushTipKeyPress</string>
+		<key>description</key>
+		<string>Changes the brush tip to a rectangle.  Produces brush stroke shapes (i.e. closed bezier paths).</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+		<key>buttonBackgroundImage</key>
+		<string>lineKbImg</string>
+	</dict>
+	<key>35</key>
+	<dict>
+		<key>name</key>
+		<string>Uniform Brush Tip</string>
+		<key>buttonName</key>
+		<string>UniformBrushTip</string>
+		<key>functionString</key>
+		<string>uniformBrushTipKeyPress</string>
+		<key>description</key>
+		<string>Changes the brush tip to be uniform.  Produces brush stroke shapes (i.e. closed bezier paths).</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>$35</key>
+	<dict>
+		<key>name</key>
+		<string>Uniform Path Brush Tip</string>
+		<key>buttonName</key>
+		<string>UniformPathBrushTip</string>
+		<key>functionString</key>
+		<string>uniformPathBrushTipKeyPress</string>
+		<key>description</key>
+		<string>Changes the brush tip to be a bezier path.  Produces bezier paths (not shapes, like the other brush tips).</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>~35</key>
+	<dict>
+		<key>name</key>
+		<string>Uniform Path for Line Work</string>
+		<key>buttonName</key>
+		<string>Uniform Path for Line Work</string>
+		<key>functionString</key>
+		<string>uniformPathBrushTipForThinLineWorkKeyPress</string>
+		<key>description</key>
+		<string>Changes the brush tip to be a bezier path, makes it stroke only, and makes it 1pt.</string>
+		<key>buttonBackgroundColor</key>
+		<string>122,129,255</string>
+		<key>buttonFontColor</key>
+		<string>61,65,130</string>
+	</dict>
+	<key>2</key>
+	<dict>
+		<key>name</key>
+		<string>Rounded Corner</string>
+		<key>buttonName</key>
+		<string>RoundedBSplineCorner</string>
+		<key>functionString</key>
+		<string>roundedBSplineCornerKeyPress</string>
+		<key>description</key>
+		<string>Draws a rounded corner by depositing two B-Spline points</string>
+		<key>buttonBackgroundColor</key>
+		<string>0,101,22</string>
+		<key>buttonFontColor</key>
+		<string>0,250,146</string>
+		<key>isDrawingButton</key>
+		<true/>
+	</dict>
+	<key>$2</key>
+	<dict>
+		<key>name</key>
+		<string>Switch Rounded Corner</string>
+		<key>buttonName</key>
+		<string>Switch Rounded Corner</string>
+		<key>functionString</key>
+		<string>switchRoundedCornerKeyPress</string>
+		<key>description</key>
+		<string>Cycles through the three rounded corner options: arc, b-spline, and bevel.</string>
+		<key>buttonBackgroundColor</key>
+		<string>100,100,100</string>
+		<key>buttonFontColor</key>
+		<string>0,250,146</string>
+	</dict>
+	<key>1</key>
+	<dict>
+		<key>name</key>
+		<string>Move Line into Shape</string>
+		<key>buttonName</key>
+		<string>MoveLineIntoShape</string>
+		<key>functionString</key>
+		<string>moveLineIntoShapeKeyPress</string>
+		<key>description</key>
+		<string>Moves the current live point to the stroke&apos;s first point, making a closed shape.</string>
+		<key>buttonBackgroundColor</key>
+		<string>255,80,80</string>
+		<key>buttonFontColor</key>
+		<string>153,38,0</string>
+	</dict>
+	<key>5</key>
+	<dict>
+		<key>name</key>
+		<string>Hard Corner</string>
+		<key>buttonName</key>
+		<string>HardCorner</string>
+		<key>functionString</key>
+		<string>hardBSplineCornerKeyPress</string>
+		<key>description</key>
+		<string>Deposits three B-Spline points to make a hard corner.</string>
+		<key>buttonBackgroundColor</key>
+		<string>109,107,1</string>
+		<key>buttonFontColor</key>
+		<string>204, 51, 0</string>
+		<key>isDrawingButton</key>
+		<true/>
+	</dict>
+	<key>17</key>
+	<dict>
+		<key>name</key>
+		<string>Hard Corner Bowed Line</string>
+		<key>buttonName</key>
+		<string>HardCornerBowedLine</string>
+		<key>functionString</key>
+		<string>hardBSplineCornerBowedLineKeyPress</string>
+		<key>description</key>
+		<string>Deposits three B-Spline points to make a hard corner, then bows the following line.</string>
+		<key>buttonBackgroundColor</key>
+		<string>146,144,0</string>
+		<key>buttonFontColor</key>
+		<string>233,195,112</string>
+		<key>isDrawingButton</key>
+		<true/>
+	</dict>
+	<key>11</key>
+	<dict>
+		<key>name</key>
+		<string>Hard Corner Bowed Line 2</string>
+		<key>buttonName</key>
+		<string>HardCornerBowedLineFacingB</string>
+		<key>functionString</key>
+		<string>hardBSplineCornerBowedLineFacingBKeyPress</string>
+		<key>description</key>
+		<string>Deposits three B-Spline points to make a hard corner, then bows the following line.</string>
+		<key>buttonBackgroundColor</key>
+		<string>146,144,0</string>
+		<key>buttonFontColor</key>
+		<string>233,195,112</string>
+		<key>isDrawingButton</key>
+		<true/>
+	</dict>
+	<key>12</key>
+	<dict>
+		<key>name</key>
+		<string>Erase Last Live Point</string>
+		<key>buttonName</key>
+		<string>EraseLastLivePoint</string>
+		<key>functionString</key>
+		<string>eraseLastLivePointKeyPress</string>
+		<key>description</key>
+		<string>During live drawing, erases the last point deposited.  This allows for correcting real-time mistakes.</string>
+		<key>buttonBackgroundColor</key>
+		<string>148,82,0</string>
+		<key>buttonFontColor</key>
+		<string>255,147,0</string>
+		<key>buttonBackgroundImage</key>
+		<string>eraseLastLivePtKbImg</string>
+	</dict>
+	<key>4</key>
+	<dict>
+		<key>name</key>
+		<string>Dab</string>
+		<key>buttonName</key>
+		<string>Dab</string>
+		<key>functionString</key>
+		<string>dabKeyPress</string>
+		<key>description</key>
+		<string>Dabs one brush tip onto the drawing.</string>
+		<key>buttonBackgroundColor</key>
+		<string>255,126,121</string>
+		<key>buttonFontColor</key>
+		<string>233,195,112</string>
+	</dict>
+	<key>53</key>
+	<dict>
+		<key>name</key>
+		<string>Escape Current Activity</string>
+		<key>buttonName</key>
+		<string>EscapeCurrentActivity</string>
+		<key>functionString</key>
+		<string>escapeCurrentActivityKeyPress</string>
+		<key>description</key>
+		<string>Cancels whatever live activity is taking place.</string>
+		<key>buttonBackgroundColor</key>
+		<string>148,82,0</string>
+		<key>buttonFontColor</key>
+		<string>255,147,0</string>
+	</dict>
+	<key>@47</key>
+	<dict>
+		<key>name</key>
+		<string>Cancel Current Activity</string>
+		<key>buttonName</key>
+		<string>CancelCurrentActivity</string>
+		<key>functionString</key>
+		<string>escapeKeyPress</string>
+		<key>description</key>
+		<string>Cancels whatever live activity is taking place.</string>
+		<key>buttonBackgroundColor</key>
+		<string>148,82,0</string>
+		<key>buttonFontColor</key>
+		<string>255,147,0</string>
+	</dict>
+	<key>@14-3</key>
+	<dict>
+		<key>name</key>
+		<string>Export Frame Toggle</string>
+		<key>buttonName</key>
+		<string>ExportFrameToggle</string>
+		<key>functionString</key>
+		<string>exportFrameToggleKeyPress</string>
+		<key>description</key>
+		<string>Shows and hides the cropping frame that is used for export and printing.</string>
+		<key>buttonBackgroundColor</key>
+		<string>80,80,80</string>
+		<key>buttonFontColor</key>
+		<string>200,200,200</string>
+		<key>isTempDisabled</key>
+		<true/>
+	</dict>
+	<key>~14</key>
+	<dict>
+		<key>name</key>
+		<string>Adjust Export Frame Corner</string>
+		<key>buttonName</key>
+		<string>AdjustExportFrameCorner</string>
+		<key>functionString</key>
+		<string>adjustExportFrameCornerKeyPress</string>
+		<key>description</key>
+		<string>Adjusts the nearest corner of the export frame.</string>
+		<key>buttonBackgroundColor</key>
+		<string>80,80,80</string>
+		<key>isTempDisabled</key>
+		<true/>
+		<key>buttonFontColor</key>
+		<string>200,200,200</string>
+	</dict>
+	<key>^8</key>
+	<dict>
+		<key>name</key>
+		<string>Adjust Export Frame Center</string>
+		<key>buttonName</key>
+		<string>Adjust Export Frame Center</string>
+		<key>functionString</key>
+		<string>adjustExportFrameCenterKeyPress</string>
+		<key>description</key>
+		<string>Adjusts the center point of the export frame.</string>
+		<key>buttonBackgroundColor</key>
+		<string>80,80,80</string>
+		<key>buttonFontColor</key>
+		<string>200,200,200</string>
+		<key>isTempDisabled</key>
+		<true/>
+	</dict>
+	<key>14</key>
+	<dict>
+		<key>name</key>
+		<string>Rounded Corner Bowed Line 1</string>
+		<key>buttonName</key>
+		<string>RoundedBSplineCornerBowedLine</string>
+		<key>functionString</key>
+		<string>roundedBSplineCornerBowedLineKeyPress</string>
+		<key>description</key>
+		<string>Deposits three B-Spline points to make a round corner, then bows the following line.</string>
+		<key>buttonBackgroundColor</key>
+		<string>0,145,147</string>
+		<key>buttonFontColor</key>
+		<string>0,220,131</string>
+		<key>isDrawingButton</key>
+		<true/>
+	</dict>
+	<key>^~2</key>
+	<dict>
+		<key>name</key>
+		<string>Instant Export Frame</string>
+		<key>buttonName</key>
+		<string>Instant Export Frame</string>
+		<key>functionString</key>
+		<string>instantExportFrameKeyPress</string>
+		<key>description</key>
+		<string>Exports the export frame immediately to disk.</string>
+		<key>buttonBackgroundColor</key>
+		<string>80,80,80</string>
+		<key>buttonFontColor</key>
+		<string>200,200,200</string>
+		<key>isTempDisabled</key>
+		<true/>
+	</dict>
+	<key>~2</key>
+	<dict>
+		<key>name</key>
+		<string>Instant Export Selected</string>
+		<key>buttonName</key>
+		<string>Instant Export Selected</string>
+		<key>functionString</key>
+		<string>instantExportSelectedKeyPress</string>
+		<key>description</key>
+		<string>Exports the selected objects immediately to disk.</string>
+		<key>buttonBackgroundColor</key>
+		<string>80,80,80</string>
+		<key>buttonFontColor</key>
+		<string>200,200,200</string>
+	</dict>
+	<key>^2</key>
+	<dict>
+		<key>name</key>
+		<string>Instant Export Canvas</string>
+		<key>buttonName</key>
+		<string>Instant Export Canvas</string>
+		<key>functionString</key>
+		<string>instantExportCanvasKeyPress</string>
+		<key>description</key>
+		<string>Exports the canvas immediately to disk.</string>
+		<key>buttonBackgroundColor</key>
+		<string>80,80,80</string>
+		<key>buttonFontColor</key>
+		<string>200,200,200</string>
+	</dict>
+	<key>13</key>
+	<dict>
+		<key>name</key>
+		<string>Stamp</string>
+		<key>buttonName</key>
+		<string>Stamp</string>
+		<key>functionString</key>
+		<string>stampKeyPress</string>
+		<key>description</key>
+		<string>If drawing: stamps the current line segment. If selected objects: stamps the objects.  If perspective mode is on: stamps vanishing points guidelines.</string>
+		<key>buttonBackgroundColor</key>
+		<string>1,25,147</string>
+		<key>buttonFontColor</key>
+		<string>0,145,147</string>
+	</dict>
+	<key>16</key>
+	<dict>
+		<key>name</key>
+		<string>Ellipse By Two Axes</string>
+		<key>buttonName</key>
+		<string>EllipseByTwoAxes</string>
+		<key>functionString</key>
+		<string>ellipseByTwoAxesKeyPress</string>
+		<key>description</key>
+		<string>Draws an ellipse based on two axes, by default.  Configurable under &quot;Shape Keys&quot; in the Drawing Settings Panel.</string>
+		<key>buttonBackgroundColor</key>
+		<string>142,250,0</string>
+		<key>buttonFontColor</key>
+		<string>0,143,0</string>
+	</dict>
+	<key>32</key>
+	<dict>
+		<key>name</key>
+		<string>Rectangle By Two Lines</string>
+		<key>buttonName</key>
+		<string>RectangleByTwoLines</string>
+		<key>functionString</key>
+		<string>rectangleByTwoLinesKeyPress</string>
+		<key>description</key>
+		<string>Draws a rectangle from two lines of the perimeter, by default.  Configurable under &quot;Shape Keys&quot; in the Drawing Settings Panel.</string>
+		<key>buttonBackgroundColor</key>
+		<string>142,250,0</string>
+		<key>buttonFontColor</key>
+		<string>0,143,0</string>
+		<key>buttonBackgroundImage</key>
+		<string>rectFromTwoSegmentsKbImg</string>
+	</dict>
+	<key>@32</key>
+	<dict>
+		<key>name</key>
+		<string>Separate Subpaths</string>
+		<key>buttonName</key>
+		<string>Separate Subpaths</string>
+		<key>functionString</key>
+		<string>separateSubpathsKeyPress</string>
+		<key>description</key>
+		<string>All subpaths are separated into different objects and then made the selection.</string>
+		<key>buttonBackgroundColor</key>
+		<string>100,100,100</string>
+		<key>buttonFontColor</key>
+		<string>255,255,255</string>
+	</dict>
+	<key>38</key>
+	<dict>
+		<key>name</key>
+		<string>Shape in Quad</string>
+		<key>buttonName</key>
+		<string>Shape In Quad</string>
+		<key>functionString</key>
+		<string>shapeInQuadKeyPress</string>
+		<key>description</key>
+		<string>Draws a shape inside four points of a quadrilateral.  Configurable under &quot;Shape Keys&quot; in the Drawing Settings Panel.</string>
+		<key>buttonBackgroundColor</key>
+		<string>142,250,0</string>
+		<key>buttonFontColor</key>
+		<string>0,143,0</string>
+	</dict>
+	<key>@38</key>
+	<dict>
+		<key>name</key>
+		<string>Join Paths</string>
+		<key>buttonName</key>
+		<string>JoinPaths</string>
+		<key>functionString</key>
+		<string>joinPathsKeyPress</string>
+		<key>description</key>
+		<string>Takes the selected paths and joins them in the order they were selected.</string>
+		<key>buttonBackgroundColor</key>
+		<string>100,100,100</string>
+		<key>buttonFontColor</key>
+		<string>255,255,255</string>
+	</dict>
+	<key>@14</key>
+	<dict>
+		<key>name</key>
+		<string>Jump to Settings Section</string>
+		<key>buttonName</key>
+		<string>JumptoSection</string>
+		<key>functionString</key>
+		<string>jumpToDrawingSettingsSectionKeyPress</string>
+		<key>description</key>
+		<string>Activates the list of sections for the Drawing Settings Panel.</string>
+		<key>buttonBackgroundColor</key>
+		<string>100,100,100</string>
+		<key>buttonFontColor</key>
+		<string>255,255,255</string>
+	</dict>
+	<key>~6</key>
+	<dict>
+		<key>name</key>
+		<string>Compass</string>
+		<key>buttonName</key>
+		<string>Compass</string>
+		<key>functionString</key>
+		<string>CompassKeyPress</string>
+		<key>description</key>
+		<string>Draws arcs like a drafting compass.</string>
+		<key>buttonBackgroundColor</key>
+		<string>142,250,0</string>
+		<key>buttonFontColor</key>
+		<string>0,143,0</string>
+	</dict>
+	<key>$5</key>
+	<dict>
+		<key>name</key>
+		<string>Group Selected Objects</string>
+		<key>buttonName</key>
+		<string>GroupSelectedObjects</string>
+		<key>functionString</key>
+		<string>groupKeyPress</string>
+		<key>description</key>
+		<string>Places the selected objects into a group.  To ungroup, press Control + Shift + G.</string>
+		<key>buttonBackgroundColor</key>
+		<string>145,145,145</string>
+		<key>buttonFontColor</key>
+		<string>0,0,0</string>
+		<key>isTempDisabled</key>
+		<true/>
+	</dict>
+	<key>^$5</key>
+	<dict>
+		<key>name</key>
+		<string>Ungroup Selected</string>
+		<key>buttonName</key>
+		<string>UngroupSelected</string>
+		<key>functionString</key>
+		<string>ungroupKeyPress</string>
+		<key>description</key>
+		<string>Any grouped objects in the selection will be ungrouped.</string>
+		<key>buttonBackgroundColor</key>
+		<string>145,145,145</string>
+		<key>buttonFontColor</key>
+		<string>0,0,0</string>
+		<key>isTempDisabled</key>
+		<true/>
+	</dict>
+	<key>@6</key>
+	<dict>
+		<key>name</key>
+		<string>Undo</string>
+		<key>buttonName</key>
+		<string>Undo</string>
+		<key>functionString</key>
+		<string>undoKeyPress</string>
+		<key>description</key>
+		<string>Undo.</string>
+		<key>buttonBackgroundColor</key>
+		<string>145,145,145</string>
+		<key>buttonFontColor</key>
+		<string>0,0,0</string>
+	</dict>
+	<key>6</key>
+	<dict>
+		<key>name</key>
+		<string>Arc By Three Points</string>
+		<key>buttonName</key>
+		<string>ArcByThreePoints</string>
+		<key>functionString</key>
+		<string>arcByThreePointsKeyPress</string>
+		<key>description</key>
+		<string>Makes an arc from deposited points.  If starting a stroke, this key is pressed three times at different points.  If a point has been deposited, press this key two times (in two separate point locations).</string>
+		<key>buttonBackgroundColor</key>
+		<string>142,250,0</string>
+		<key>buttonFontColor</key>
+		<string>0,143,0</string>
+		<key>isDrawingButton</key>
+		<true/>
+	</dict>
+	<key>@7</key>
+	<dict>
+		<key>name</key>
+		<string>Redo</string>
+		<key>buttonName</key>
+		<string>Redo</string>
+		<key>functionString</key>
+		<string>redoKeyPress</string>
+		<key>description</key>
+		<string>Redo.</string>
+		<key>buttonBackgroundColor</key>
+		<string>145,145,145</string>
+		<key>buttonFontColor</key>
+		<string>0,0,0</string>
+	</dict>
+	<key>8</key>
+	<dict>
+		<key>name</key>
+		<string>Rounded Corner Bowed Line 2</string>
+		<key>buttonName</key>
+		<string>RoundedBSplineCornerBowedLineFacingB</string>
+		<key>functionString</key>
+		<string>roundedBSplineCornerBowedLineFacingBKeyPress</string>
+		<key>description</key>
+		<string>Deposits three B-Spline points to make a round corner, then bows the following line.</string>
+		<key>buttonBackgroundColor</key>
+		<string>0,145,147</string>
+		<key>buttonFontColor</key>
+		<string>0,220,131</string>
+		<key>isDrawingButton</key>
+		<true/>
+	</dict>
+	<key>9</key>
+	<dict>
+		<key>name</key>
+		<string>Vanishing Point</string>
+		<key>buttonName</key>
+		<string>VanishingPoint</string>
+		<key>functionString</key>
+		<string>vanishingPointKeyPress</string>
+		<key>description</key>
+		<string>Deposits lines leading to the vanishing point.</string>
+		<key>buttonBackgroundColor</key>
+		<string>148,82,0</string>
+		<key>buttonFontColor</key>
+		<string>192,192,192</string>
+	</dict>
+	<key>~9</key>
+	<dict>
+		<key>name</key>
+		<string>Toggle V.P. Lines Snapping</string>
+		<key>buttonName</key>
+		<string>ToggleVanishingPointLinesSnappingKeyPress</string>
+		<key>functionString</key>
+		<string>toggleVanishingPointLinesSnappingKeyPress</string>
+		<key>description</key>
+		<string>Turn on and off the vanishing point lines snapping.  Active only when perspective mode is on.</string>
+		<key>buttonBackgroundColor</key>
+		<string>191,90,242</string>
+	</dict>
+	<key>^9</key>
+	<dict>
+		<key>name</key>
+		<string>Toggle Vanishing Point Lines</string>
+		<key>buttonName</key>
+		<string>ToggleVanishingPointLines</string>
+		<key>functionString</key>
+		<string>toggleVanishingPointLinesKeyPress</string>
+		<key>description</key>
+		<string>Turn on and off the vanishing point lines, including horizon line.</string>
+		<key>buttonBackgroundColor</key>
+		<string>191,90,242</string>
+	</dict>
+	<key>$~40</key>
+	<dict>
+		<key>name</key>
+		<string>Clear Vanishing Point Lines</string>
+		<key>buttonName</key>
+		<string>ClearVanishingPointLines</string>
+		<key>functionString</key>
+		<string>clearVanishingPointLinesKeyPress</string>
+		<key>description</key>
+		<string>Removes all lines leading to the vanishing point that were deposited by the user.</string>
+		<key>buttonBackgroundColor</key>
+		<string>191,90,242</string>
+	</dict>
+	<key>@18</key>
+	<dict>
+		<key>name</key>
+		<string>Layer 1</string>
+		<key>buttonName</key>
+		<string>Layer1</string>
+		<key>functionString</key>
+		<string>layer1KeyPress</string>
+		<key>description</key>
+		<string>Activates the first layer.</string>
+		<key>buttonBackgroundColor</key>
+		<string>191,90,242</string>
+	</dict>
+	<key>@19</key>
+	<dict>
+		<key>name</key>
+		<string>Layer 2</string>
+		<key>buttonName</key>
+		<string>Layer2</string>
+		<key>functionString</key>
+		<string>layer2KeyPress</string>
+		<key>description</key>
+		<string>Activates the second layer.</string>
+		<key>buttonBackgroundColor</key>
+		<string>191,90,242</string>
+	</dict>
+	<key>@20</key>
+	<dict>
+		<key>name</key>
+		<string>Layer 3</string>
+		<key>buttonName</key>
+		<string>Layer3</string>
+		<key>functionString</key>
+		<string>layer3KeyPress</string>
+		<key>description</key>
+		<string>Activates the third layer.</string>
+		<key>buttonBackgroundColor</key>
+		<string>191,90,242</string>
+	</dict>
+	<key>@21</key>
+	<dict>
+		<key>name</key>
+		<string>Layer 4</string>
+		<key>buttonName</key>
+		<string>Layer4</string>
+		<key>functionString</key>
+		<string>layer4KeyPress</string>
+		<key>description</key>
+		<string>Activates the fourth layer.</string>
+		<key>buttonBackgroundColor</key>
+		<string>191,90,242</string>
+	</dict>
+	<key>@40</key>
+	<dict>
+		<key>name</key>
+		<string>Toggle Keyboard Panel</string>
+		<key>buttonName</key>
+		<string>ToggleKeyboardPanel</string>
+		<key>functionString</key>
+		<string>toggleKeyboardPanelKeyPress</string>
+		<key>description</key>
+		<string>Show and hide keyboard panel that sits inside the document window.</string>
+		<key>buttonBackgroundColor</key>
+		<string>191,90,242</string>
+		<key>buttonFontColor</key>
+		<string>122,25,255</string>
+	</dict>
+	<key>40</key>
+	<dict>
+		<key>name</key>
+		<string>Toggle Paint Tray</string>
+		<key>buttonName</key>
+		<string>TogglePaintTray</string>
+		<key>functionString</key>
+		<string>togglePaintTrayKeyPress</string>
+		<key>description</key>
+		<string>Show and hide the paint mode tray that sits inside the document window.</string>
+		<key>buttonBackgroundColor</key>
+		<string>191,90,242</string>
+		<key>buttonFontColor</key>
+		<string>122,25,255</string>
+	</dict>
+	<key>37</key>
+	<dict>
+		<key>name</key>
+		<string>Toggle Layers Panel</string>
+		<key>buttonName</key>
+		<string>ToggleLayersPanel</string>
+		<key>functionString</key>
+		<string>toggleLayersPanelKeyPress</string>
+		<key>description</key>
+		<string>Show and hide the layers panel.</string>
+		<key>buttonBackgroundColor</key>
+		<string>191,90,242</string>
+		<key>buttonFontColor</key>
+		<string>122,25,255</string>
+	</dict>
+	<key>15</key>
+	<dict>
+		<key>name</key>
+		<string>Complete Line into Shape</string>
+		<key>buttonName</key>
+		<string>CompleteCurrentLine</string>
+		<key>functionString</key>
+		<string>completeCurrentLineIntoShapeKeyPress</string>
+		<key>description</key>
+		<string>Connects the current live point to the stroke&apos;s first point, making a closed shape.</string>
+		<key>buttonBackgroundColor</key>
+		<string>255,80,80</string>
+		<key>buttonFontColor</key>
+		<string>153,38,0</string>
+	</dict>
+	<key>7</key>
+	<dict>
+		<key>name</key>
+		<string>Move Selection Anchor Point</string>
+		<key>buttonName</key>
+		<string>MoveSelectionAnchorPoint</string>
+		<key>functionString</key>
+		<string>moveSelectionAnchorPointKeyPress</string>
+		<key>description</key>
+		<string>When there is a selection of objects, this repositions the purple anchor point where the cursor is located.  The selection anchor point is used as the reference for rotation and scaling operations.</string>
+		<key>buttonBackgroundColor</key>
+		<string>1,25,147</string>
+		<key>buttonFontColor</key>
+		<string>122,25,255</string>
+	</dict>
+	<key>C</key>
+	<dict>
+		<key>name</key>
+		<string>Rectangle Select</string>
+		<key>buttonName</key>
+		<string>Rectangle Select</string>
+		<key>functionString</key>
+		<string>rectangleSelectKeyPress</string>
+		<key>description</key>
+		<string>Begins or ends selecting objects with the selection rectangle.</string>
+		<key>buttonBackgroundColor</key>
+		<string>145,145,145</string>
+		<key>buttonFontColor</key>
+		<string>255,255,255</string>
+	</dict>
+	<key>^7</key>
+	<dict>
+		<key>name</key>
+		<string>Move Permanent Anchor Point</string>
+		<key>buttonName</key>
+		<string>Move Permanent AnchorPoint</string>
+		<key>functionString</key>
+		<string>movePermanentAnchorPointKeyPress</string>
+		<key>description</key>
+		<string>The permanent anchor point is saved inside the document and it is used by the Replication Mode.  Go to &quot;Anchor Points&quot; section for options. It is green in color.</string>
+		<key>buttonBackgroundColor</key>
+		<string>1,25,147</string>
+		<key>buttonFontColor</key>
+		<string>142,250,0</string>
+	</dict>
+	<key>$7</key>
+	<dict>
+		<key>name</key>
+		<string>Move Object Anchor Point</string>
+		<key>buttonName</key>
+		<string>MoveObjectAnchorPoint</string>
+		<key>functionString</key>
+		<string>moveObjectAnchorPointKeyPress</string>
+		<key>description</key>
+		<string>If there is a selection with only one object, that object can use its own anchor point instead of the regular anchor every time it is selected.  It is red in color.</string>
+		<key>buttonBackgroundColor</key>
+		<string>1,25,147</string>
+		<key>buttonFontColor</key>
+		<string>148,17,0</string>
+	</dict>
+	<key>@15</key>
+	<dict>
+		<key>name</key>
+		<string>Replication Mode Toggle</string>
+		<key>buttonName</key>
+		<string>Replication Mode Toggle</string>
+		<key>functionString</key>
+		<string>replicationModeToggleKeyPress</string>
+		<key>description</key>
+		<string>Turns replication mode on and off.  Replication mode is configured in the Drawing Settings panel.</string>
+		<key>buttonBackgroundColor</key>
+		<string>1,25,147</string>
+		<key>buttonFontColor</key>
+		<string>0,145,147</string>
+	</dict>
+	<key>^15</key>
+	<dict>
+		<key>name</key>
+		<string>Replicate Selected</string>
+		<key>buttonName</key>
+		<string>Replicate Selected</string>
+		<key>functionString</key>
+		<string>replicateSelectedToggleKeyPress</string>
+		<key>description</key>
+		<string>Replicate the selected objects according to the settings in the Replication Mode box.</string>
+		<key>buttonBackgroundColor</key>
+		<string>1,25,147</string>
+		<key>buttonFontColor</key>
+		<string>0,145,147</string>
+	</dict>
+	<key>~39</key>
+	<dict>
+		<key>name</key>
+		<string>Azimuth Clockwise Lower</string>
+		<key>buttonName</key>
+		<string>AzimuthClockwiseLower</string>
+		<key>functionString</key>
+		<string>azimuthClockwiseLowerKeyPress</string>
+		<key>description</key>
+		<string>Moves the Azimuth clockwise by 5 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>39</key>
+	<dict>
+		<key>name</key>
+		<string>Azimuth Clockwise</string>
+		<key>buttonName</key>
+		<string>AzimuthClockwise</string>
+		<key>functionString</key>
+		<string>azimuthClockwiseKeyPress</string>
+		<key>description</key>
+		<string>Moves the Azimuth clockwise by 15 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>69</key>
+	<dict>
+		<key>name</key>
+		<string>Azimuth Clockwise</string>
+		<key>buttonName</key>
+		<string>AzimuthClockwise</string>
+		<key>functionString</key>
+		<string>azimuthClockwiseKeyPress</string>
+		<key>description</key>
+		<string>Moves the Azimuth clockwise by 15 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>$39</key>
+	<dict>
+		<key>name</key>
+		<string>Azimuth Clockwise Upper</string>
+		<key>buttonName</key>
+		<string>AzimuthClockwiseUpper</string>
+		<key>functionString</key>
+		<string>azimuthClockwiseUpperKeyPress</string>
+		<key>description</key>
+		<string>Moves the Azimuth clockwise  by 45 degrees</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>41</key>
+	<dict>
+		<key>name</key>
+		<string>Azimuth Counterclockwise</string>
+		<key>buttonName</key>
+		<string>AzimuthCounterclockwise</string>
+		<key>functionString</key>
+		<string>azimuthCounterclockwiseKeyPress</string>
+		<key>description</key>
+		<string>Increases the Azimuth by its step amount.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>78</key>
+	<dict>
+		<key>name</key>
+		<string>Azimuth Counterclockwise</string>
+		<key>buttonName</key>
+		<string>AzimuthCounterclockwise</string>
+		<key>functionString</key>
+		<string>azimuthCounterclockwiseKeyPress</string>
+		<key>description</key>
+		<string>Increases the Azimuth by its step amount.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>@39</key>
+	<dict>
+		<key>name</key>
+		<string>Flip Vertically</string>
+		<key>buttonName</key>
+		<string>Flip Vertically</string>
+		<key>functionString</key>
+		<string>flipVerticallyKeyPress</string>
+		<key>description</key>
+		<string>Flips the selected objects vertically.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>@41</key>
+	<dict>
+		<key>name</key>
+		<string>Flip Horizontally</string>
+		<key>buttonName</key>
+		<string>Flip Horizontally</string>
+		<key>functionString</key>
+		<string>flipHorizontallyKeyPress</string>
+		<key>description</key>
+		<string>Flips the selected objects horizontally.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>$41</key>
+	<dict>
+		<key>name</key>
+		<string>Azimuth Counterclockwise Upper</string>
+		<key>buttonName</key>
+		<string>AzimuthCounterclockwiseUpper</string>
+		<key>functionString</key>
+		<string>azimuthCounterclockwiseUpperKeyPress</string>
+		<key>description</key>
+		<string>Increases the Azimuth by 45 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>~41</key>
+	<dict>
+		<key>name</key>
+		<string>Azimuth Counterclockwise Lower</string>
+		<key>buttonName</key>
+		<string>AzimuthCounterclockwiseLower</string>
+		<key>functionString</key>
+		<string>azimuthCounterclockwiseLowerKeyPress</string>
+		<key>description</key>
+		<string>Moves the azimuth clockwise by 45 degrees</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>33</key>
+	<dict>
+		<key>name</key>
+		<string>Stroke Scale Decrement</string>
+		<key>buttonName</key>
+		<string>StrokeScaleDecrement</string>
+		<key>functionString</key>
+		<string>strokeScaleDecrementKeyPress</string>
+		<key>description</key>
+		<string>Decreases the current stroke scale by a step amount.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>~33</key>
+	<dict>
+		<key>name</key>
+		<string>Stroke Scale Decrement Lower</string>
+		<key>buttonName</key>
+		<string>StrokeScaleDecrement Lower</string>
+		<key>functionString</key>
+		<string>strokeScaleDecrementLowerKeyPress</string>
+		<key>description</key>
+		<string>Decreases the current stroke scale by a smaller step amount.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>$33</key>
+	<dict>
+		<key>name</key>
+		<string>Stroke Scale Decrement Upper</string>
+		<key>buttonName</key>
+		<string>StrokeScaleDecrement Upper</string>
+		<key>functionString</key>
+		<string>strokeScaleDecrementUpperKeyPress</string>
+		<key>description</key>
+		<string>Decreases the current stroke scale by a larger step amount.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>30</key>
+	<dict>
+		<key>name</key>
+		<string>Stroke Scale Increment</string>
+		<key>buttonName</key>
+		<string>StrokeScaleIncrement</string>
+		<key>functionString</key>
+		<string>strokeScaleIncrementKeyPress</string>
+		<key>description</key>
+		<string>Decreases the current stroke scale by a step amount.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>$30</key>
+	<dict>
+		<key>name</key>
+		<string>Stroke Scale Increment Upper</string>
+		<key>buttonName</key>
+		<string>StrokeScaleIncrementUpper</string>
+		<key>functionString</key>
+		<string>strokeScaleIncrementUpperKeyPress</string>
+		<key>description</key>
+		<string>Decreases the current stroke scale by a larger step amount.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>~30</key>
+	<dict>
+		<key>name</key>
+		<string>Stroke Scale Increment Lower</string>
+		<key>buttonName</key>
+		<string>StrokeScaleIncrementLower</string>
+		<key>functionString</key>
+		<string>strokeScaleIncrementLowerKeyPress</string>
+		<key>description</key>
+		<string>Decreases the current stroke scale by a smaller step amount.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>$126</key>
+	<dict>
+		<key>name</key>
+		<string>Step Up Corner Rounding Length</string>
+		<key>buttonName</key>
+		<string>Step Up Corner Rounding Length</string>
+		<key>functionString</key>
+		<string>stepUpCornerRoundingLengthKeyPress</string>
+		<key>description</key>
+		<string>Increases the corner rounding length.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>$125</key>
+	<dict>
+		<key>name</key>
+		<string>Step Down Corner Rounding Length</string>
+		<key>buttonName</key>
+		<string>Step Down Corner Rounding Length</string>
+		<key>functionString</key>
+		<string>stepDownCornerRoundingLengthKeyPress</string>
+		<key>description</key>
+		<string>Decreases the corner rounding length.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>27</key>
+	<dict>
+		<key>name</key>
+		<string>Width Palette Index Decrement</string>
+		<key>buttonName</key>
+		<string>WidthPaletteIndexDecrement</string>
+		<key>functionString</key>
+		<string>strokeWidthDecrementKeyPress</string>
+		<key>description</key>
+		<string>Decrements the stroke width, either the selected objects or settings.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>~27</key>
+	<dict>
+		<key>name</key>
+		<string>Stroke Width Decrement</string>
+		<key>buttonName</key>
+		<string>Stroke Width Decrement</string>
+		<key>functionString</key>
+		<string>strokeWidthDecrementKeyPress</string>
+		<key>description</key>
+		<string>Decrements the stroke width, either the selected objects or settings.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>~24</key>
+	<dict>
+		<key>name</key>
+		<string>Stroke Width Increment</string>
+		<key>buttonName</key>
+		<string>Stroke Width Increment</string>
+		<key>functionString</key>
+		<string>strokeWidthIncrementKeyPress</string>
+		<key>description</key>
+		<string>Increments the stroke width, either the selected objects or settings.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>24</key>
+	<dict>
+		<key>name</key>
+		<string>Width Palette Index Increment</string>
+		<key>buttonName</key>
+		<string>WidthPaletteIndexIncrement</string>
+		<key>functionString</key>
+		<string>strokeWidthIncrementKeyPress</string>
+		<key>description</key>
+		<string>Increments the stroke width, either the selected objects or settings.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>48</key>
+	<dict>
+		<key>name</key>
+		<string>Select</string>
+		<key>buttonName</key>
+		<string>Select</string>
+		<key>functionString</key>
+		<string>selectKeyPress</string>
+		<key>description</key>
+		<string>Select objects.  Equivalent to pressing the mouse button plus shift.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>49</key>
+	<dict>
+		<key>name</key>
+		<string>Cart</string>
+		<key>buttonName</key>
+		<string>Cart</string>
+		<key>functionString</key>
+		<string>cartKeyPress</string>
+		<key>description</key>
+		<string>Begin or end carting.  Carting locks selected objects to the location of the cursor until the spacebar is pressed again.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>~51</key>
+	<dict>
+		<key>name</key>
+		<string>Delete Last Stroke</string>
+		<key>buttonName</key>
+		<string>DeleteLastStroke</string>
+		<key>functionString</key>
+		<string>deleteLastStrokeKeyPress</string>
+		<key>description</key>
+		<string>Delete that last stroke deposited</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>51</key>
+	<dict>
+		<key>name</key>
+		<string>Delete Selected Objects</string>
+		<key>buttonName</key>
+		<string>DeleteSelectedObjects</string>
+		<key>functionString</key>
+		<string>deleteSelectedObjectsKeyPress</string>
+		<key>description</key>
+		<string>Delete objects that are selected.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>@51</key>
+	<dict>
+		<key>name</key>
+		<string>Delete All Strokes</string>
+		<key>buttonName</key>
+		<string>Delete All Strokes</string>
+		<key>functionString</key>
+		<string>deleteAllStrokesKeyPress</string>
+		<key>description</key>
+		<string>Delete all strokes on the current layer.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>^0</key>
+	<dict>
+		<key>name</key>
+		<string>Toggle Angle Snapping</string>
+		<key>buttonName</key>
+		<string>ToggleAngleSnapping</string>
+		<key>functionString</key>
+		<string>toggleAngleSnappingKeyPress</string>
+		<key>description</key>
+		<string>Turns snapping of angles on lines on and off.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>^5</key>
+	<dict>
+		<key>name</key>
+		<string>Toggle Grid Snapping</string>
+		<key>buttonName</key>
+		<string>ToggleGridSnapping</string>
+		<key>functionString</key>
+		<string>toggleGridSnappingKeyPress</string>
+		<key>description</key>
+		<string>Turns snapping of grid points on and off.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>$^126</key>
+	<dict>
+		<key>name</key>
+		<string>Layer Step Toward Base Layer</string>
+		<key>buttonName</key>
+		<string>LayerStepTowardBaseLayer</string>
+		<key>functionString</key>
+		<string>layerStepTowardBaseLayerKeyPress</string>
+		<key>description</key>
+		<string>Steps the current layer toward the base layer.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>@$126</key>
+	<dict>
+		<key>name</key>
+		<string>Move Selected to Front</string>
+		<key>buttonName</key>
+		<string>selectedDrawablesToFront</string>
+		<key>functionString</key>
+		<string>selectedDrawablesToFrontKeyPress</string>
+		<key>description</key>
+		<string>Moves the selected objects to the front.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>@$125</key>
+	<dict>
+		<key>name</key>
+		<string>Move Selected to Back</string>
+		<key>buttonName</key>
+		<string>selectedDrawablesToBack</string>
+		<key>functionString</key>
+		<string>selectedDrawablesToBackKeyPress</string>
+		<key>description</key>
+		<string>Moves the selected objects to the back.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>^~126</key>
+	<dict>
+		<key>name</key>
+		<string>Increase Basic Hues Brightness</string>
+		<key>buttonName</key>
+		<string>IncreaseBasicHuesBrightness</string>
+		<key>functionString</key>
+		<string>increaseBasicHuesBrightnessKeyPress</string>
+		<key>description</key>
+		<string>Increase hue for basic hues in palette keys.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>^~125</key>
+	<dict>
+		<key>name</key>
+		<string>Decrease Basic Hues Brightness</string>
+		<key>buttonName</key>
+		<string>DecreaseBasicHuesBrightness</string>
+		<key>functionString</key>
+		<string>decreaseBasicHuesBrightnessKeyPress</string>
+		<key>description</key>
+		<string>Decrease brightness for basic hues in palette keys.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>^~123</key>
+	<dict>
+		<key>name</key>
+		<string>Decrease Basic Hues Saturation</string>
+		<key>buttonName</key>
+		<string>DecreaseBasicHuesSaturation</string>
+		<key>functionString</key>
+		<string>decreaseBasicHuesSaturationKeyPress</string>
+		<key>description</key>
+		<string>Decrease saturation for basic hues in palette keys.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>^~124</key>
+	<dict>
+		<key>name</key>
+		<string>Increase Basic Hues Saturation</string>
+		<key>buttonName</key>
+		<string>increaseBasicHuesSaturation</string>
+		<key>functionString</key>
+		<string>increaseBasicHuesSaturationKeyPress</string>
+		<key>description</key>
+		<string>Increase saturation for basic hues in palette keys.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>$^125</key>
+	<dict>
+		<key>name</key>
+		<string>Layer Step Away From Base Layer</string>
+		<key>buttonName</key>
+		<string>LayerStepAwayFromBaseLayer</string>
+		<key>functionString</key>
+		<string>layerStepAwayFromBaseLayerKeyPress</string>
+		<key>description</key>
+		<string>Steps the current layer away from the base layer.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>124</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Width Up</string>
+		<key>buttonName</key>
+		<string>BrushWidthUp</string>
+		<key>functionString</key>
+		<string>brushWidthUpKeyPress</string>
+		<key>description</key>
+		<string>Increases the width of the brush tip.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>126</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Height Up</string>
+		<key>buttonName</key>
+		<string>BrushHeightUp</string>
+		<key>functionString</key>
+		<string>brushHeightUpKeyPress</string>
+		<key>description</key>
+		<string>Increases the height of the brush tip.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>@126</key>
+	<dict>
+		<key>name</key>
+		<string>Move Selected Up</string>
+		<key>buttonName</key>
+		<string>Move Selected Up</string>
+		<key>functionString</key>
+		<string>selectedDrawablesUpKeyPress</string>
+		<key>description</key>
+		<string>Moves the selected objects up.</string>
+		<key>buttonBackgroundColor</key>
+		<string>200,200,200</string>
+	</dict>
+	<key>91</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Angle 90 Degrees</string>
+		<key>buttonName</key>
+		<string>BrushAngle90Degrees</string>
+		<key>functionString</key>
+		<string>brushAngle90DegreesKeyPress</string>
+		<key>description</key>
+		<string>Sets the brush angle at 90 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>125</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Height Down</string>
+		<key>buttonName</key>
+		<string>BrushHeightDown</string>
+		<key>functionString</key>
+		<string>brushHeightDownKeyPress</string>
+		<key>description</key>
+		<string>Decreases the height of the brush tip.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>123</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Width Down</string>
+		<key>buttonName</key>
+		<string>BrushWidthDown</string>
+		<key>functionString</key>
+		<string>brushWidthDownKeyPress</string>
+		<key>description</key>
+		<string>Decreases the width of the brush tip.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>@124</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Angle 0 Degrees</string>
+		<key>buttonName</key>
+		<string>BrushAngle0Degrees</string>
+		<key>functionString</key>
+		<string>brushAngle0DegreesKeyPress</string>
+		<key>description</key>
+		<string>Sets the brush angle at 0 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>88</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Angle 0 Degrees</string>
+		<key>buttonName</key>
+		<string>BrushAngle0Degrees</string>
+		<key>functionString</key>
+		<string>brushAngle0DegreesKeyPress</string>
+		<key>description</key>
+		<string>Sets the brush angle at 0 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>@125</key>
+	<dict>
+		<key>name</key>
+		<string>Move Selected Down</string>
+		<key>buttonName</key>
+		<string>Move Selected Down</string>
+		<key>functionString</key>
+		<string>selectedDrawablesDownKeyPress</string>
+		<key>description</key>
+		<string>Moves the selected objects down.</string>
+		<key>buttonBackgroundColor</key>
+		<string>200,200,200</string>
+	</dict>
+	<key>@123</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Angle 180 Degrees</string>
+		<key>buttonName</key>
+		<string>BrushAngle180Degrees</string>
+		<key>functionString</key>
+		<string>brushAngle180DegreesKeyPress</string>
+		<key>description</key>
+		<string>Sets the brush angle at 180 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>86</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Angle 180 Degrees</string>
+		<key>buttonName</key>
+		<string>BrushAngle180Degrees</string>
+		<key>functionString</key>
+		<string>brushAngle180DegreesKeyPress</string>
+		<key>description</key>
+		<string>Sets the brush angle at 180 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>84</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Angle 270 Degrees</string>
+		<key>buttonName</key>
+		<string>BrushAngle270Degrees</string>
+		<key>functionString</key>
+		<string>brushAngle270DegreesKeyPress</string>
+		<key>description</key>
+		<string>Sets the brush angle at 270 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>92</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Angle 45 Degrees</string>
+		<key>buttonName</key>
+		<string>BrushAngle45Degrees</string>
+		<key>functionString</key>
+		<string>brushAngle45DegreesKeyPress</string>
+		<key>description</key>
+		<string>Sets the brush angle at 45 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>89</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Angle 135 Degrees</string>
+		<key>buttonName</key>
+		<string>BrushAngle135Degrees</string>
+		<key>functionString</key>
+		<string>brushAngle135DegreesKeyPress</string>
+		<key>description</key>
+		<string>Sets the brush angle at 135 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>83</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Angle 225 Degrees</string>
+		<key>buttonName</key>
+		<string>BrushAngle225Degrees</string>
+		<key>functionString</key>
+		<string>brushAngle225DegreesKeyPress</string>
+		<key>description</key>
+		<string>Sets the brush angle at 225 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>85</key>
+	<dict>
+		<key>name</key>
+		<string>Brush Angle 315 Degrees</string>
+		<key>buttonName</key>
+		<string>BrushAngle315Degrees</string>
+		<key>functionString</key>
+		<string>brushAngle315DegreesKeyPress</string>
+		<key>description</key>
+		<string>Sets the brush angle at 315 degrees.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>~5</key>
+	<dict>
+		<key>name</key>
+		<string>Toggle Grid Visibility</string>
+		<key>buttonName</key>
+		<string>ToggleGridVisibility</string>
+		<key>functionString</key>
+		<string>toggleGridVisibilityKeyPress</string>
+		<key>description</key>
+		<string>Shows and hides the grid (as configured in the Settings panel).</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>^37</key>
+	<dict>
+		<key>name</key>
+		<string>ToggleLengthSnapping</string>
+		<key>buttonName</key>
+		<string>Toggle Length Snapping</string>
+		<key>functionString</key>
+		<string>toggleLengthSnappingKeyPress</string>
+		<key>description</key>
+		<string>Turns snapping of line lengths to a fixed increment.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>^35</key>
+	<dict>
+		<key>name</key>
+		<string>TogglePointSnapping</string>
+		<key>buttonName</key>
+		<string>Toggle Point Snapping</string>
+		<key>functionString</key>
+		<string>togglePointSnappingKeyPress</string>
+		<key>description</key>
+		<string>Turns snapping of the current mouse point to existing points on the drawing layer.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>^31</key>
+	<dict>
+		<key>name</key>
+		<string>TogglePathSnapping</string>
+		<key>buttonName</key>
+		<string>Toggle Path Snapping</string>
+		<key>functionString</key>
+		<string>togglePathSnappingKeyPress</string>
+		<key>description</key>
+		<string>Turns snapping of the current mouse point to existing stroke paths on the drawing layer.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>^40</key>
+	<dict>
+		<key>name</key>
+		<string>ToggleAlignmentSnapping</string>
+		<key>buttonName</key>
+		<string>Toggle Alignment Snapping</string>
+		<key>functionString</key>
+		<string>toggleAlignmentSnappingKeyPress</string>
+		<key>description</key>
+		<string>Turns snapping of the current mouse point to alignment points and segments.</string>
+		<key>buttonBackgroundColor</key>
+		<string>123,25,147</string>
+	</dict>
+	<key>@42</key>
+	<dict>
+		<key>name</key>
+		<string>Loaded Object</string>
+		<key>buttonName</key>
+		<string>Loaded Object </string>
+		<key>functionString</key>
+		<string>loadedObjectKeyPress</string>
+		<key>description</key>
+		<string>Loads the currently selected object(s) into the loaded object slot.</string>
+		<key>buttonBackgroundColor</key>
+		<string>100,100,100</string>
+	</dict>
+	<key>44</key>
+	<dict>
+		<key>name</key>
+		<string>Union</string>
+		<key>buttonName</key>
+		<string>Union</string>
+		<key>functionString</key>
+		<string>unionCombinatoricsKeyPress</string>
+		<key>description</key>
+		<string>All selected shapes that overlap will be joined together.  If there are no selected shapes, this changes the live combinatorics mode to union.</string>
+		<key>buttonBackgroundColor</key>
+		<string>20,20,20</string>
+		<key>buttonBackgroundImage</key>
+		<string>unionKbImg</string>
+	</dict>
+	<key>^44</key>
+	<dict>
+		<key>name</key>
+		<string>Live Combinatorics Is Union</string>
+		<key>buttonName</key>
+		<string>Live Combinatorics Is Union</string>
+		<key>functionString</key>
+		<string>liveCombinatoricsIsUnionKeyPress</string>
+		<key>description</key>
+		<string>Change the live combinatorics mode to union.</string>
+		<key>buttonBackgroundColor</key>
+		<string>20,20,20</string>
+	</dict>
+	<key>^43</key>
+	<dict>
+		<key>name</key>
+		<string>Live Combinatorics Is Subtraction</string>
+		<key>buttonName</key>
+		<string>Live Combinatorics Is Subtraction</string>
+		<key>functionString</key>
+		<string>liveCombinatoricsIsSubtractionKeyPress</string>
+		<key>description</key>
+		<string>Change the live combinatorics mode to subtraction.</string>
+		<key>buttonBackgroundColor</key>
+		<string>20,20,20</string>
+	</dict>
+	<key>^47</key>
+	<dict>
+		<key>name</key>
+		<string>Live Combinatorics Is Intersection</string>
+		<key>buttonName</key>
+		<string>Live Combinatorics Is Intersection</string>
+		<key>functionString</key>
+		<string>liveCombinatoricsIsIntersectionKeyPress</string>
+		<key>description</key>
+		<string>Change the live combinatorics mode to intersection.</string>
+		<key>buttonBackgroundColor</key>
+		<string>20,20,20</string>
+	</dict>
+	<key>@37</key>
+	<dict>
+		<key>name</key>
+		<string>Toggle Live Combinatorics</string>
+		<key>buttonName</key>
+		<string>Toggle Live Combinatorics</string>
+		<key>functionString</key>
+		<string>toggleLiveCombinatoricsKeyPress</string>
+		<key>description</key>
+		<string>Toggle the live combinatorics mode.</string>
+		<key>buttonBackgroundColor</key>
+		<string>20,20,20</string>
+		<key>buttonFontColor</key>
+		<string>266,165,0</string>
+	</dict>
+	<key>43</key>
+	<dict>
+		<key>name</key>
+		<string>Subtraction</string>
+		<key>buttonName</key>
+		<string>Subtraction</string>
+		<key>functionString</key>
+		<string>subtractionCombinatoricsKeyPress</string>
+		<key>description</key>
+		<string>One selected object is subtracted from all other selected objects.  The object that was selected last is the negative object.   If there are no selected shapes, this changes the live combinatorics mode to subtraction.</string>
+		<key>buttonBackgroundColor</key>
+		<string>20,20,20</string>
+		<key>buttonBackgroundImage</key>
+		<string>subtractionKbImg</string>
+	</dict>
+	<key>47</key>
+	<dict>
+		<key>name</key>
+		<string>Intersection</string>
+		<key>buttonName</key>
+		<string>Intersection</string>
+		<key>functionString</key>
+		<string>intersectionCombinatoricsKeyPress</string>
+		<key>description</key>
+		<string>The intersection of all selected shapes will be produced.    If there are no selected shapes, this changes the live combinatorics mode to intersection.</string>
+		<key>buttonBackgroundColor</key>
+		<string>20,20,20</string>
+		<key>buttonBackgroundImage</key>
+		<string>intersectionKbImg</string>
+	</dict>
+</dict>
+</plist>

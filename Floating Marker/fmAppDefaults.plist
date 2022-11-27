@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>showKeyboardPanel</key>
+	<true/>
+	<key>blankDocumentCanvasWidthForCurrentUnits</key>
+	<integer>1920</integer>
+	<key>blankDocumentCanvasHeightForCurrentUnits</key>
+	<integer>1080</integer>
+	<key>blankDocumentCanvasUnits</key>
+	<string>px</string>
+	<key>blankDocumentExportFrameWidthForCurrentUnits</key>
+	<integer>800</integer>
+	<key>blankDocumentExportFrameHeightForCurrentUnits</key>
+	<integer>800</integer>
+	<key>blankDocumentExportFrameUnits</key>
+	<string>px</string>
+</dict>
+</plist>

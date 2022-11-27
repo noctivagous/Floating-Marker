@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB0BE26A25AF86B400C4F3C1 /* NCTControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BE26925AF86B400C4F3C1 /* NCTControls.swift */; };
+		BB0BE26D25AF880500C4F3C1 /* NCTKeyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BE26C25AF880500C4F3C1 /* NCTKeyCodes.swift */; };
+		BB0BE27125AFABBE00C4F3C1 /* NCTUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BE27025AFABBE00C4F3C1 /* NCTUtilities.swift */; };
+		BB1A830625F6E8D2002701AD /* DrawingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A830525F6E8D2002701AD /* DrawingEntity.swift */; };
+		BB1A830925F6E8E6002701AD /* RectangleDrawingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A830825F6E8E6002701AD /* RectangleDrawingEntity.swift */; };
+		BB1A830C25F6E8F6002701AD /* ShapeInQuadDrawingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A830B25F6E8F6002701AD /* ShapeInQuadDrawingEntity.swift */; };
+		BB1A830F25F6E902002701AD /* EllipseDrawingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A830E25F6E902002701AD /* EllipseDrawingEntity.swift */; };
+		BB1A831225F6EA85002701AD /* ShapeKeysConfigPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A831125F6EA85002701AD /* ShapeKeysConfigPopoverViewController.swift */; };
+		BB2665022618E07A00AE97F8 /* FitCurves.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB351F29260D375B00DDFA75 /* FitCurves.swift */; };
+		BB2C2EEE2619267100B21F83 /* UniformFillConfigPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C2EED2619267100B21F83 /* UniformFillConfigPopoverViewController.swift */; };
+		BB2C2EF126192B4F00B21F83 /* NSBezierPath+NCTExensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B4E1425BCDE8D00099AF2 /* NSBezierPath+NCTExensions.m */; };
+		BB2EDE2126183A6B00D48BB7 /* NoiseConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDE1F26183A6B00D48BB7 /* NoiseConfigurationViewController.swift */; };
+		BB2EDE2226183A6B00D48BB7 /* ReplicationConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDE2026183A6B00D48BB7 /* ReplicationConfigurationViewController.swift */; };
+		BB2EDE2826183ECA00D48BB7 /* NSBezierPath-OAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDE2526183ECA00D48BB7 /* NSBezierPath-OAExtensions.m */; };
+		BB317F7625FABA850006256F /* DynamicTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB317F7525FABA850006256F /* DynamicTree.swift */; };
+		BB317F7925FBB5660006256F /* Hull.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB38CBB625B6A6C1003CAE4E /* Hull.swift */; };
+		BB317F7B25FBB5F40006256F /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB38CBB125B6A6C1003CAE4E /* Format.swift */; };
+		BB317F7D25FBB5F80006256F /* HullHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB38CBB225B6A6C1003CAE4E /* HullHelper.swift */; };
+		BB317F7F25FBB5FA0006256F /* Intersect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB38CBB325B6A6C1003CAE4E /* Intersect.swift */; };
+		BB317F8125FBB5FD0006256F /* Convex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB38CBB425B6A6C1003CAE4E /* Convex.swift */; };
+		BB317F8325FBB6010006256F /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB38CBB525B6A6C1003CAE4E /* Grid.swift */; };
+		BB3BF7062650B4D700E82419 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3BF7052650B4D600E82419 /* CloudKit.framework */; };
+		BB3D605525F95AAB003EF481 /* FMShapeKeyDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D605425F95AAB003EF481 /* FMShapeKeyDrawable.swift */; };
+		BB3FADE825B94C0200B3A47F /* FBCurveLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADDD25B94B3500B3A47F /* FBCurveLocation.swift */; };
+		BB3FADE925B94C0200B3A47F /* FBContourOverlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADDA25B94B3500B3A47F /* FBContourOverlap.swift */; };
+		BB3FADEA25B94C0200B3A47F /* FBEdgeCrossing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADE325B94B3500B3A47F /* FBEdgeCrossing.swift */; };
+		BB3FADEB25B94C0200B3A47F /* FBBezierGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADD525B94B3500B3A47F /* FBBezierGraph.swift */; };
+		BB3FADEC25B94C0200B3A47F /* FBBezierIntersectRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADDE25B94B3500B3A47F /* FBBezierIntersectRange.swift */; };
+		BB3FADED25B94C0200B3A47F /* NSBezierPath_Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADD925B94B3500B3A47F /* NSBezierPath_Utilities.swift */; };
+		BB3FADEE25B94C0200B3A47F /* FBEdgeOverlapRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADDC25B94B3500B3A47F /* FBEdgeOverlapRun.swift */; };
+		BB3FADEF25B94C0200B3A47F /* FBBezierCurve_Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADE425B94B3500B3A47F /* FBBezierCurve_Edge.swift */; };
+		BB3FADF025B94C0200B3A47F /* NSBezierPath_Boolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADE625B94B3500B3A47F /* NSBezierPath_Boolean.swift */; };
+		BB3FADF125B94C0200B3A47F /* FBBezierContour.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADD825B94B3500B3A47F /* FBBezierContour.swift */; };
+		BB3FADF225B94C0200B3A47F /* FBEdgeOverlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADE525B94B3500B3A47F /* FBEdgeOverlap.swift */; };
+		BB3FADF325B94C0200B3A47F /* FBBezierIntersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADE125B94B3500B3A47F /* FBBezierIntersection.swift */; };
+		BB3FADF425B94C0200B3A47F /* BooleanPathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADD625B94B3500B3A47F /* BooleanPathsView.swift */; };
+		BB3FADF525B94C0200B3A47F /* CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADDB25B94B3500B3A47F /* CGPath.swift */; };
+		BB3FADF625B94C0200B3A47F /* FBGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADD725B94B3500B3A47F /* FBGeometry.swift */; };
+		BB3FADF725B94C0200B3A47F /* FBBezierCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADDF25B94B3500B3A47F /* FBBezierCurve.swift */; };
+		BB3FADF825B94C0200B3A47F /* LRTBezierPathWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADE025B94B3500B3A47F /* LRTBezierPathWrapper.swift */; };
+		BB3FADF925B94C0200B3A47F /* Int_Extn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FADE225B94B3500B3A47F /* Int_Extn.swift */; };
+		BB3FAE0F25B94DE000B3A47F /* NSBezierPath+WFBezierCombinatorics.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3FAE0E25B94DE000B3A47F /* NSBezierPath+WFBezierCombinatorics.m */; };
+		BB3FAE1325B94DF100B3A47F /* WFGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = BB3FAE1225B94DF100B3A47F /* WFGeometry.c */; };
+		BB4DBBA525ACCF1B005D7D84 /* keyboardMappingsDescriptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2A855325ACC09D00A4F609 /* keyboardMappingsDescriptions.plist */; };
+		BB50DA17264CC98C00EB53C5 /* SavePanels.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB50DA16264CC71500EB53C5 /* SavePanels.xib */; };
+		BB580E8425D0E26700323515 /* FMDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB580E8325D0E26700323515 /* FMDrawable.swift */; };
+		BB5DD902261D25B400163715 /* NCTCAReplicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DD901261D25B400163715 /* NCTCAReplicatorLayer.swift */; };
+		BB5DD905261D278E00163715 /* FMImageDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DD904261D278E00163715 /* FMImageDrawable.swift */; };
+		BB68E4AE25ACA87F00145A1F /* FMPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB68E4AD25ACA87F00145A1F /* FMPanel.swift */; };
+		BB742DCE25B3842300847B46 /* NCTColorListUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB742DCD25B3842300847B46 /* NCTColorListUsage.swift */; };
+		BB742DD225B3B8D500847B46 /* FMKeyboardPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB742DD125B3B8D500847B46 /* FMKeyboardPanel.swift */; };
+		BB9309D82694F63600028279 /* GroupDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9309D72694F63600028279 /* GroupDrawable.swift */; };
+		BB9DF36C25DCF41900BA5319 /* KeyboardButtonBgImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9DF36B25DCF41900BA5319 /* KeyboardButtonBgImages.xcassets */; };
+		BBA5E86225F9AAED00062525 /* SVGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA5E86125F9AAED00062525 /* SVGPath.swift */; };
+		BBAB51D425B1FA4600522CC2 /* NCTSegmentedControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAB51D325B1FA4600522CC2 /* NCTSegmentedControls.swift */; };
+		BBB88BA526AD1C990067023F /* PhyllotaxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB88BA426AD1C990067023F /* PhyllotaxisView.swift */; };
+		BBC00A1225B7EEEC00AB9D11 /* FMStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC00A1125B7EEEB00AB9D11 /* FMStroke.swift */; };
+		BBC8EB4C262ACF690083489D /* NCTColorPickerGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC8EB4B262ACF690083489D /* NCTColorPickerGridView.swift */; };
+		BBD3DD6725BC0C91005AEE27 /* SwiftSimplify.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD3DD6525BC0C91005AEE27 /* SwiftSimplify.swift */; };
+		BBD3DD6825BC0C91005AEE27 /* Point2DRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD3DD6625BC0C91005AEE27 /* Point2DRepresentable.swift */; };
+		BBE0BA0A25D650F400C9D5A6 /* NCTQuad.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE0BA0925D650F400C9D5A6 /* NCTQuad.swift */; };
+		BBE0BA0E25D9FC4E00C9D5A6 /* fmAppDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBE0BA0D25D9FC4E00C9D5A6 /* fmAppDefaults.plist */; };
+		BBE0BA1125DA00B300C9D5A6 /* NCTColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE0BA1025DA00B300C9D5A6 /* NCTColorPicker.swift */; };
+		BBE0BA1425DA3BB100C9D5A6 /* NCTDrawingPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE0BA1325DA3BB100C9D5A6 /* NCTDrawingPageController.swift */; };
+		BBEA90D925ABE757004EA02F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA90D825ABE757004EA02F /* AppDelegate.swift */; };
+		BBEA90DB25ABE757004EA02F /* FMDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA90DA25ABE757004EA02F /* FMDocument.swift */; };
+		BBEA90DE25ABE757004EA02F /* FMDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBEA90DC25ABE757004EA02F /* FMDocument.xib */; };
+		BBEA90E025ABE759004EA02F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBEA90DF25ABE759004EA02F /* Assets.xcassets */; };
+		BBEA90E325ABE759004EA02F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBEA90E125ABE759004EA02F /* MainMenu.xib */; };
+		BBEA90EF25ABF5EE004EA02F /* DrawingBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA90EE25ABF5EE004EA02F /* DrawingBoard.swift */; };
+		BBEA90F225ABF5FD004EA02F /* DrawingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA90F125ABF5FD004EA02F /* DrawingPage.swift */; };
+		BBEA90F525ABF60F004EA02F /* ActivePenLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA90F425ABF60F004EA02F /* ActivePenLayer.swift */; };
+		BBEA90F825ABF623004EA02F /* PaperLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA90F725ABF623004EA02F /* PaperLayer.swift */; };
+		BBEA90FE25ABF75A004EA02F /* InputInteractionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA90FD25ABF75A004EA02F /* InputInteractionManager.swift */; };
+		BBEA910125ABF77A004EA02F /* InkAndLineSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA910025ABF77A004EA02F /* InkAndLineSettingsManager.swift */; };
+		BBEA910425ABF783004EA02F /* LineWorkInteractionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA910325ABF783004EA02F /* LineWorkInteractionEntity.swift */; };
+		BBEA910725ABFCAE004EA02F /* NCTExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA910625ABFCAE004EA02F /* NCTExtensions.swift */; };
+		BBF3CC03262BE5EA006A4899 /* FMLightDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF3CC02262BE5EA006A4899 /* FMLightDrawable.swift */; };
+		BBF4CAB92660AC9800459203 /* PreviewViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4CAB82660AC9800459203 /* PreviewViews.swift */; };
+		BBFD5E9325B47B4E00F151B1 /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD5E9025B47A3D00F151B1 /* KeyboardButton.swift */; };
+		BBFD5E9525B47B5100F151B1 /* KeyboardMappingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD5E8F25B47A3D00F151B1 /* KeyboardMappingsManager.swift */; };
+		BBFD5E9A25B4A1CE00F151B1 /* notesForPenciKit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BBFD5E9925B4A1CE00F151B1 /* notesForPenciKit.rtf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB0BE26925AF86B400C4F3C1 /* NCTControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTControls.swift; sourceTree = "<group>"; };
+		BB0BE26C25AF880500C4F3C1 /* NCTKeyCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTKeyCodes.swift; sourceTree = "<group>"; };
+		BB0BE27025AFABBE00C4F3C1 /* NCTUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTUtilities.swift; sourceTree = "<group>"; };
+		BB1A830525F6E8D2002701AD /* DrawingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingEntity.swift; sourceTree = "<group>"; };
+		BB1A830825F6E8E6002701AD /* RectangleDrawingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDrawingEntity.swift; sourceTree = "<group>"; };
+		BB1A830B25F6E8F6002701AD /* ShapeInQuadDrawingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeInQuadDrawingEntity.swift; sourceTree = "<group>"; };
+		BB1A830E25F6E902002701AD /* EllipseDrawingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseDrawingEntity.swift; sourceTree = "<group>"; };
+		BB1A831125F6EA85002701AD /* ShapeKeysConfigPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeKeysConfigPopoverViewController.swift; sourceTree = "<group>"; };
+		BB2A855325ACC09D00A4F609 /* keyboardMappingsDescriptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keyboardMappingsDescriptions.plist; sourceTree = "<group>"; };
+		BB2C2EED2619267100B21F83 /* UniformFillConfigPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniformFillConfigPopoverViewController.swift; sourceTree = "<group>"; };
+		BB2C2EF326192C5500B21F83 /* NSBezierPath+Geometry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+Geometry.m"; sourceTree = "<group>"; };
+		BB2C2EF426192C5500B21F83 /* NSBezierPath+Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+Geometry.h"; sourceTree = "<group>"; };
+		BB2C2EFA26192F6700B21F83 /* DKDrawKitMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKDrawKitMacros.h; sourceTree = "<group>"; };
+		BB2C2EFC26192FB400B21F83 /* DKGeometryUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKGeometryUtilities.m; sourceTree = "<group>"; };
+		BB2C2EFD26192FB500B21F83 /* DKGeometryUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKGeometryUtilities.h; sourceTree = "<group>"; };
+		BB2C2F0026192FDE00B21F83 /* NSBezierPath+Editing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+Editing.m"; sourceTree = "<group>"; };
+		BB2C2F0126192FDE00B21F83 /* NSBezierPath+Editing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+Editing.h"; sourceTree = "<group>"; };
+		BB2EDE1F26183A6B00D48BB7 /* NoiseConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseConfigurationViewController.swift; sourceTree = "<group>"; };
+		BB2EDE2026183A6B00D48BB7 /* ReplicationConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicationConfigurationViewController.swift; sourceTree = "<group>"; };
+		BB2EDE2526183ECA00D48BB7 /* NSBezierPath-OAExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath-OAExtensions.m"; sourceTree = "<group>"; };
+		BB2EDE2626183ECA00D48BB7 /* NSBezierPath-OAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath-OAExtensions.h"; sourceTree = "<group>"; };
+		BB2EDE2726183ECA00D48BB7 /* NSBezierPath-OAInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath-OAInternal.h"; sourceTree = "<group>"; };
+		BB317F7525FABA850006256F /* DynamicTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTree.swift; sourceTree = "<group>"; };
+		BB351F29260D375B00DDFA75 /* FitCurves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitCurves.swift; sourceTree = "<group>"; };
+		BB38CBB125B6A6C1003CAE4E /* Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
+		BB38CBB225B6A6C1003CAE4E /* HullHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HullHelper.swift; sourceTree = "<group>"; };
+		BB38CBB325B6A6C1003CAE4E /* Intersect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intersect.swift; sourceTree = "<group>"; };
+		BB38CBB425B6A6C1003CAE4E /* Convex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convex.swift; sourceTree = "<group>"; };
+		BB38CBB525B6A6C1003CAE4E /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		BB38CBB625B6A6C1003CAE4E /* Hull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hull.swift; sourceTree = "<group>"; };
+		BB3BF7052650B4D600E82419 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		BB3D605425F95AAB003EF481 /* FMShapeKeyDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMShapeKeyDrawable.swift; sourceTree = "<group>"; };
+		BB3FADD025B90DAA00B3A47F /* Potrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potrace.swift; sourceTree = "<group>"; };
+		BB3FADD525B94B3500B3A47F /* FBBezierGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBBezierGraph.swift; sourceTree = "<group>"; };
+		BB3FADD625B94B3500B3A47F /* BooleanPathsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanPathsView.swift; sourceTree = "<group>"; };
+		BB3FADD725B94B3500B3A47F /* FBGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBGeometry.swift; sourceTree = "<group>"; };
+		BB3FADD825B94B3500B3A47F /* FBBezierContour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBBezierContour.swift; sourceTree = "<group>"; };
+		BB3FADD925B94B3500B3A47F /* NSBezierPath_Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSBezierPath_Utilities.swift; sourceTree = "<group>"; };
+		BB3FADDA25B94B3500B3A47F /* FBContourOverlap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBContourOverlap.swift; sourceTree = "<group>"; };
+		BB3FADDB25B94B3500B3A47F /* CGPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPath.swift; sourceTree = "<group>"; };
+		BB3FADDC25B94B3500B3A47F /* FBEdgeOverlapRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBEdgeOverlapRun.swift; sourceTree = "<group>"; };
+		BB3FADDD25B94B3500B3A47F /* FBCurveLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBCurveLocation.swift; sourceTree = "<group>"; };
+		BB3FADDE25B94B3500B3A47F /* FBBezierIntersectRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBBezierIntersectRange.swift; sourceTree = "<group>"; };
+		BB3FADDF25B94B3500B3A47F /* FBBezierCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBBezierCurve.swift; sourceTree = "<group>"; };
+		BB3FADE025B94B3500B3A47F /* LRTBezierPathWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRTBezierPathWrapper.swift; sourceTree = "<group>"; };
+		BB3FADE125B94B3500B3A47F /* FBBezierIntersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBBezierIntersection.swift; sourceTree = "<group>"; };
+		BB3FADE225B94B3500B3A47F /* Int_Extn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int_Extn.swift; sourceTree = "<group>"; };
+		BB3FADE325B94B3500B3A47F /* FBEdgeCrossing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBEdgeCrossing.swift; sourceTree = "<group>"; };
+		BB3FADE425B94B3500B3A47F /* FBBezierCurve_Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBBezierCurve_Edge.swift; sourceTree = "<group>"; };
+		BB3FADE525B94B3500B3A47F /* FBEdgeOverlap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBEdgeOverlap.swift; sourceTree = "<group>"; };
+		BB3FADE625B94B3500B3A47F /* NSBezierPath_Boolean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSBezierPath_Boolean.swift; sourceTree = "<group>"; };
+		BB3FAE0525B94DB700B3A47F /* Floating Marker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Floating Marker-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB3FAE0E25B94DE000B3A47F /* NSBezierPath+WFBezierCombinatorics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+WFBezierCombinatorics.m"; sourceTree = "<group>"; };
+		BB3FAE1125B94DE900B3A47F /* NSBezierPath+WFBezierCombinatorics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+WFBezierCombinatorics.h"; sourceTree = "<group>"; };
+		BB3FAE1225B94DF100B3A47F /* WFGeometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = WFGeometry.c; sourceTree = "<group>"; };
+		BB3FAE1525B94DFA00B3A47F /* WFGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFGeometry.h; sourceTree = "<group>"; };
+		BB50DA16264CC71500EB53C5 /* SavePanels.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavePanels.xib; sourceTree = "<group>"; };
+		BB580E8325D0E26700323515 /* FMDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDrawable.swift; sourceTree = "<group>"; };
+		BB5DD901261D25B400163715 /* NCTCAReplicatorLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTCAReplicatorLayer.swift; sourceTree = "<group>"; };
+		BB5DD904261D278E00163715 /* FMImageDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMImageDrawable.swift; sourceTree = "<group>"; };
+		BB68E4AD25ACA87F00145A1F /* FMPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMPanel.swift; sourceTree = "<group>"; };
+		BB6B4E0425BCD6CF00099AF2 /* NSBezierPath+FitCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+FitCurve.h"; sourceTree = "<group>"; };
+		BB6B4E0525BCD6CF00099AF2 /* NSBezierPath+FitCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+FitCurve.m"; sourceTree = "<group>"; };
+		BB6B4E0825BCD76E00099AF2 /* NSBezierPath+Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+Utilities.m"; sourceTree = "<group>"; };
+		BB6B4E0925BCD76E00099AF2 /* NSBezierPath+Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+Utilities.h"; sourceTree = "<group>"; };
+		BB6B4E0C25BCD78100099AF2 /* Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Geometry.m; sourceTree = "<group>"; };
+		BB6B4E0D25BCD78100099AF2 /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		BB6B4E1225BCDDD100099AF2 /* NSBezierPath+NCTExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+NCTExtensions.h"; sourceTree = "<group>"; };
+		BB6B4E1425BCDE8D00099AF2 /* NSBezierPath+NCTExensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+NCTExensions.m"; sourceTree = "<group>"; };
+		BB6B4E1725BCF1F800099AF2 /* NSBezierPath+Simplify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+Simplify.m"; sourceTree = "<group>"; };
+		BB6B4E1825BCF1F900099AF2 /* NSBezierPath+Simplify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+Simplify.h"; sourceTree = "<group>"; };
+		BB742DCD25B3842300847B46 /* NCTColorListUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTColorListUsage.swift; sourceTree = "<group>"; };
+		BB742DD125B3B8D500847B46 /* FMKeyboardPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMKeyboardPanel.swift; sourceTree = "<group>"; };
+		BB9309D72694F63600028279 /* GroupDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDrawable.swift; sourceTree = "<group>"; };
+		BB9DF36B25DCF41900BA5319 /* KeyboardButtonBgImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KeyboardButtonBgImages.xcassets; sourceTree = "<group>"; };
+		BBA5E86125F9AAED00062525 /* SVGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPath.swift; sourceTree = "<group>"; };
+		BBAB51D325B1FA4600522CC2 /* NCTSegmentedControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTSegmentedControls.swift; sourceTree = "<group>"; };
+		BBB88BA426AD1C990067023F /* PhyllotaxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyllotaxisView.swift; sourceTree = "<group>"; };
+		BBC00A1125B7EEEB00AB9D11 /* FMStroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMStroke.swift; sourceTree = "<group>"; };
+		BBC8EB4B262ACF690083489D /* NCTColorPickerGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTColorPickerGridView.swift; sourceTree = "<group>"; };
+		BBD3DD6525BC0C91005AEE27 /* SwiftSimplify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSimplify.swift; sourceTree = "<group>"; };
+		BBD3DD6625BC0C91005AEE27 /* Point2DRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point2DRepresentable.swift; sourceTree = "<group>"; };
+		BBE0BA0925D650F400C9D5A6 /* NCTQuad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTQuad.swift; sourceTree = "<group>"; };
+		BBE0BA0D25D9FC4E00C9D5A6 /* fmAppDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = fmAppDefaults.plist; sourceTree = "<group>"; };
+		BBE0BA1025DA00B300C9D5A6 /* NCTColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCTColorPicker.swift; sourceTree = "<group>"; };
+		BBE0BA1325DA3BB100C9D5A6 /* NCTDrawingPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTDrawingPageController.swift; sourceTree = "<group>"; };
+		BBEA90D525ABE757004EA02F /* Floating Marker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Floating Marker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBEA90D825ABE757004EA02F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBEA90DA25ABE757004EA02F /* FMDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDocument.swift; sourceTree = "<group>"; };
+		BBEA90DD25ABE757004EA02F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/FMDocument.xib; sourceTree = "<group>"; };
+		BBEA90DF25ABE759004EA02F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBEA90E225ABE759004EA02F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BBEA90E425ABE759004EA02F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBEA90E525ABE759004EA02F /* Floating_Marker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Floating_Marker.entitlements; sourceTree = "<group>"; };
+		BBEA90EE25ABF5EE004EA02F /* DrawingBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoard.swift; sourceTree = "<group>"; };
+		BBEA90F125ABF5FD004EA02F /* DrawingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingPage.swift; sourceTree = "<group>"; };
+		BBEA90F425ABF60F004EA02F /* ActivePenLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivePenLayer.swift; sourceTree = "<group>"; };
+		BBEA90F725ABF623004EA02F /* PaperLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperLayer.swift; sourceTree = "<group>"; };
+		BBEA90FD25ABF75A004EA02F /* InputInteractionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputInteractionManager.swift; sourceTree = "<group>"; };
+		BBEA910025ABF77A004EA02F /* InkAndLineSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InkAndLineSettingsManager.swift; sourceTree = "<group>"; };
+		BBEA910325ABF783004EA02F /* LineWorkInteractionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineWorkInteractionEntity.swift; sourceTree = "<group>"; };
+		BBEA910625ABFCAE004EA02F /* NCTExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCTExtensions.swift; sourceTree = "<group>"; };
+		BBF308C1261A0BF2009D79CD /* PreviewViews2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViews2.swift; sourceTree = "<group>"; };
+		BBF3CC02262BE5EA006A4899 /* FMLightDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMLightDrawable.swift; sourceTree = "<group>"; };
+		BBF4CAB82660AC9800459203 /* PreviewViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViews.swift; sourceTree = "<group>"; };
+		BBFD5E8F25B47A3D00F151B1 /* KeyboardMappingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardMappingsManager.swift; sourceTree = "<group>"; };
+		BBFD5E9025B47A3D00F151B1 /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
+		BBFD5E9925B4A1CE00F151B1 /* notesForPenciKit.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = notesForPenciKit.rtf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBEA90D225ABE757004EA02F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB3BF7062650B4D700E82419 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB1A830425F6E8BC002701AD /* Drawing Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A830525F6E8D2002701AD /* DrawingEntity.swift */,
+				BB1A830E25F6E902002701AD /* EllipseDrawingEntity.swift */,
+				BB1A830825F6E8E6002701AD /* RectangleDrawingEntity.swift */,
+				BB1A830B25F6E8F6002701AD /* ShapeInQuadDrawingEntity.swift */,
+				BBE0BA0925D650F400C9D5A6 /* NCTQuad.swift */,
+				BB1A831125F6EA85002701AD /* ShapeKeysConfigPopoverViewController.swift */,
+				BB2C2EED2619267100B21F83 /* UniformFillConfigPopoverViewController.swift */,
+				BB2EDE1F26183A6B00D48BB7 /* NoiseConfigurationViewController.swift */,
+				BB2EDE2026183A6B00D48BB7 /* ReplicationConfigurationViewController.swift */,
+				BB5DD901261D25B400163715 /* NCTCAReplicatorLayer.swift */,
+			);
+			path = "Drawing Entities";
+			sourceTree = "<group>";
+		};
+		BB2665042618E1D800AE97F8 /* FortunateBear */ = {
+			isa = PBXGroup;
+			children = (
+				BB6B4E0D25BCD78100099AF2 /* Geometry.h */,
+				BB6B4E0C25BCD78100099AF2 /* Geometry.m */,
+				BB6B4E0925BCD76E00099AF2 /* NSBezierPath+Utilities.h */,
+				BB6B4E0825BCD76E00099AF2 /* NSBezierPath+Utilities.m */,
+				BB6B4E1825BCF1F900099AF2 /* NSBezierPath+Simplify.h */,
+				BB6B4E1725BCF1F800099AF2 /* NSBezierPath+Simplify.m */,
+				BB6B4E0425BCD6CF00099AF2 /* NSBezierPath+FitCurve.h */,
+				BB6B4E0525BCD6CF00099AF2 /* NSBezierPath+FitCurve.m */,
+			);
+			path = FortunateBear;
+			sourceTree = "<group>";
+		};
+		BB2665052618E1FB00AE97F8 /* Bezier Path Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB6B4E1225BCDDD100099AF2 /* NSBezierPath+NCTExtensions.h */,
+				BB6B4E1425BCDE8D00099AF2 /* NSBezierPath+NCTExensions.m */,
+				BB2EDE2626183ECA00D48BB7 /* NSBezierPath-OAExtensions.h */,
+				BB2EDE2526183ECA00D48BB7 /* NSBezierPath-OAExtensions.m */,
+				BB2EDE2726183ECA00D48BB7 /* NSBezierPath-OAInternal.h */,
+				BB351F29260D375B00DDFA75 /* FitCurves.swift */,
+			);
+			path = "Bezier Path Extensions";
+			sourceTree = "<group>";
+		};
+		BB2C2F072619A34800B21F83 /* DrawKit */ = {
+			isa = PBXGroup;
+			children = (
+				BB2C2EFA26192F6700B21F83 /* DKDrawKitMacros.h */,
+				BB2C2EF426192C5500B21F83 /* NSBezierPath+Geometry.h */,
+				BB2C2EF326192C5500B21F83 /* NSBezierPath+Geometry.m */,
+				BB2C2F0126192FDE00B21F83 /* NSBezierPath+Editing.h */,
+				BB2C2F0026192FDE00B21F83 /* NSBezierPath+Editing.m */,
+				BB2C2EFD26192FB500B21F83 /* DKGeometryUtilities.h */,
+				BB2C2EFC26192FB400B21F83 /* DKGeometryUtilities.m */,
+			);
+			path = DrawKit;
+			sourceTree = "<group>";
+		};
+		BB38CBB025B6A6C1003CAE4E /* ConcaveHull */ = {
+			isa = PBXGroup;
+			children = (
+				BB38CBB125B6A6C1003CAE4E /* Format.swift */,
+				BB38CBB225B6A6C1003CAE4E /* HullHelper.swift */,
+				BB38CBB325B6A6C1003CAE4E /* Intersect.swift */,
+				BB38CBB425B6A6C1003CAE4E /* Convex.swift */,
+				BB38CBB525B6A6C1003CAE4E /* Grid.swift */,
+				BB38CBB625B6A6C1003CAE4E /* Hull.swift */,
+			);
+			path = ConcaveHull;
+			sourceTree = "<group>";
+		};
+		BB3BF7042650B4D600E82419 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB3BF7052650B4D600E82419 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB3FADD325B94B0D00B3A47F /* Combinatorics */ = {
+			isa = PBXGroup;
+			children = (
+				BB3FAE0E25B94DE000B3A47F /* NSBezierPath+WFBezierCombinatorics.m */,
+				BB3FAE1125B94DE900B3A47F /* NSBezierPath+WFBezierCombinatorics.h */,
+				BB3FAE1225B94DF100B3A47F /* WFGeometry.c */,
+				BB3FAE1525B94DFA00B3A47F /* WFGeometry.h */,
+				BB3FADD425B94B3500B3A47F /* VectorBoolean */,
+			);
+			path = Combinatorics;
+			sourceTree = "<group>";
+		};
+		BB3FADD425B94B3500B3A47F /* VectorBoolean */ = {
+			isa = PBXGroup;
+			children = (
+				BB3FADD525B94B3500B3A47F /* FBBezierGraph.swift */,
+				BB3FADD625B94B3500B3A47F /* BooleanPathsView.swift */,
+				BB3FADD725B94B3500B3A47F /* FBGeometry.swift */,
+				BB3FADD825B94B3500B3A47F /* FBBezierContour.swift */,
+				BB3FADD925B94B3500B3A47F /* NSBezierPath_Utilities.swift */,
+				BB3FADDA25B94B3500B3A47F /* FBContourOverlap.swift */,
+				BB3FADDB25B94B3500B3A47F /* CGPath.swift */,
+				BB3FADDC25B94B3500B3A47F /* FBEdgeOverlapRun.swift */,
+				BB3FADDD25B94B3500B3A47F /* FBCurveLocation.swift */,
+				BB3FADDE25B94B3500B3A47F /* FBBezierIntersectRange.swift */,
+				BB3FADDF25B94B3500B3A47F /* FBBezierCurve.swift */,
+				BB3FADE025B94B3500B3A47F /* LRTBezierPathWrapper.swift */,
+				BB3FADE125B94B3500B3A47F /* FBBezierIntersection.swift */,
+				BB3FADE225B94B3500B3A47F /* Int_Extn.swift */,
+				BB3FADE325B94B3500B3A47F /* FBEdgeCrossing.swift */,
+				BB3FADE425B94B3500B3A47F /* FBBezierCurve_Edge.swift */,
+				BB3FADE525B94B3500B3A47F /* FBEdgeOverlap.swift */,
+				BB3FADE625B94B3500B3A47F /* NSBezierPath_Boolean.swift */,
+			);
+			path = VectorBoolean;
+			sourceTree = "<group>";
+		};
+		BB50DA15264CC71500EB53C5 /* Viewing and Export */ = {
+			isa = PBXGroup;
+			children = (
+				BB50DA16264CC71500EB53C5 /* SavePanels.xib */,
+			);
+			path = "Viewing and Export";
+			sourceTree = "<group>";
+		};
+		BB51ABFF25C1EA1E00A402C8 /* Unused */ = {
+			isa = PBXGroup;
+			children = (
+				BB2C2F072619A34800B21F83 /* DrawKit */,
+				BB2665042618E1D800AE97F8 /* FortunateBear */,
+				BB3FADD025B90DAA00B3A47F /* Potrace.swift */,
+			);
+			path = Unused;
+			sourceTree = "<group>";
+		};
+		BB6B4E0125BCD57600099AF2 /* SwiftSimplify */ = {
+			isa = PBXGroup;
+			children = (
+				BBD3DD6625BC0C91005AEE27 /* Point2DRepresentable.swift */,
+				BBD3DD6525BC0C91005AEE27 /* SwiftSimplify.swift */,
+			);
+			path = SwiftSimplify;
+			sourceTree = "<group>";
+		};
+		BBA5E86425F9B11D00062525 /* FMDrawable */ = {
+			isa = PBXGroup;
+			children = (
+				BB9309D72694F63600028279 /* GroupDrawable.swift */,
+				BB580E8325D0E26700323515 /* FMDrawable.swift */,
+				BBC00A1125B7EEEB00AB9D11 /* FMStroke.swift */,
+				BB3D605425F95AAB003EF481 /* FMShapeKeyDrawable.swift */,
+				BB5DD904261D278E00163715 /* FMImageDrawable.swift */,
+				BBF3CC02262BE5EA006A4899 /* FMLightDrawable.swift */,
+			);
+			path = FMDrawable;
+			sourceTree = "<group>";
+		};
+		BBEA90CC25ABE757004EA02F = {
+			isa = PBXGroup;
+			children = (
+				BBEA90D725ABE757004EA02F /* Floating Marker */,
+				BB51ABFF25C1EA1E00A402C8 /* Unused */,
+				BBEA90D625ABE757004EA02F /* Products */,
+				BB3BF7042650B4D600E82419 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BBEA90D625ABE757004EA02F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBEA90D525ABE757004EA02F /* Floating Marker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBEA90D725ABE757004EA02F /* Floating Marker */ = {
+			isa = PBXGroup;
+			children = (
+				BBEA90D825ABE757004EA02F /* AppDelegate.swift */,
+				BBEA90DF25ABE759004EA02F /* Assets.xcassets */,
+				BBEA90E425ABE759004EA02F /* Info.plist */,
+				BBEA90E525ABE759004EA02F /* Floating_Marker.entitlements */,
+				BB68E4AD25ACA87F00145A1F /* FMPanel.swift */,
+				BBEA90E125ABE759004EA02F /* MainMenu.xib */,
+				BBEA90DC25ABE757004EA02F /* FMDocument.xib */,
+				BBEA90DA25ABE757004EA02F /* FMDocument.swift */,
+				BBEA90FA25ABF709004EA02F /* FMDocument Views */,
+				BBEA910325ABF783004EA02F /* LineWorkInteractionEntity.swift */,
+				BBEA910025ABF77A004EA02F /* InkAndLineSettingsManager.swift */,
+				BBEA90FD25ABF75A004EA02F /* InputInteractionManager.swift */,
+				BBF4CAB82660AC9800459203 /* PreviewViews.swift */,
+				BBF308C1261A0BF2009D79CD /* PreviewViews2.swift */,
+				BB1A830425F6E8BC002701AD /* Drawing Entities */,
+				BBFD5E9925B4A1CE00F151B1 /* notesForPenciKit.rtf */,
+				BBA5E86425F9B11D00062525 /* FMDrawable */,
+				BBA5E86125F9AAED00062525 /* SVGPath.swift */,
+				BB6B4E0125BCD57600099AF2 /* SwiftSimplify */,
+				BBEA910625ABFCAE004EA02F /* NCTExtensions.swift */,
+				BB0BE26925AF86B400C4F3C1 /* NCTControls.swift */,
+				BB0BE27025AFABBE00C4F3C1 /* NCTUtilities.swift */,
+				BBE0BA1025DA00B300C9D5A6 /* NCTColorPicker.swift */,
+				BBC8EB4B262ACF690083489D /* NCTColorPickerGridView.swift */,
+				BBAB51D325B1FA4600522CC2 /* NCTSegmentedControls.swift */,
+				BBB88BA426AD1C990067023F /* PhyllotaxisView.swift */,
+				BB3FADD325B94B0D00B3A47F /* Combinatorics */,
+				BB0BE26C25AF880500C4F3C1 /* NCTKeyCodes.swift */,
+				BBFD5E8C25B47A3D00F151B1 /* Keyboard */,
+				BB742DCD25B3842300847B46 /* NCTColorListUsage.swift */,
+				BB38CBB025B6A6C1003CAE4E /* ConcaveHull */,
+				BB2665052618E1FB00AE97F8 /* Bezier Path Extensions */,
+				BB3FAE0525B94DB700B3A47F /* Floating Marker-Bridging-Header.h */,
+				BB50DA15264CC71500EB53C5 /* Viewing and Export */,
+				BBE0BA0D25D9FC4E00C9D5A6 /* fmAppDefaults.plist */,
+			);
+			path = "Floating Marker";
+			sourceTree = "<group>";
+		};
+		BBEA90FA25ABF709004EA02F /* FMDocument Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBE0BA1325DA3BB100C9D5A6 /* NCTDrawingPageController.swift */,
+				BBEA90EE25ABF5EE004EA02F /* DrawingBoard.swift */,
+				BBEA90F125ABF5FD004EA02F /* DrawingPage.swift */,
+				BBEA90F725ABF623004EA02F /* PaperLayer.swift */,
+				BBEA90F425ABF60F004EA02F /* ActivePenLayer.swift */,
+				BB317F7525FABA850006256F /* DynamicTree.swift */,
+			);
+			path = "FMDocument Views";
+			sourceTree = "<group>";
+		};
+		BBFD5E8C25B47A3D00F151B1 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BB9DF36B25DCF41900BA5319 /* KeyboardButtonBgImages.xcassets */,
+				BB2A855325ACC09D00A4F609 /* keyboardMappingsDescriptions.plist */,
+				BBFD5E8F25B47A3D00F151B1 /* KeyboardMappingsManager.swift */,
+				BB742DD125B3B8D500847B46 /* FMKeyboardPanel.swift */,
+				BBFD5E9025B47A3D00F151B1 /* KeyboardButton.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBEA90D425ABE757004EA02F /* Floating Marker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBEA90E825ABE759004EA02F /* Build configuration list for PBXNativeTarget "Floating Marker" */;
+			buildPhases = (
+				BBEA90D125ABE757004EA02F /* Sources */,
+				BBEA90D225ABE757004EA02F /* Frameworks */,
+				BBEA90D325ABE757004EA02F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Floating Marker";
+			packageProductDependencies = (
+			);
+			productName = "Floating Marker";
+			productReference = BBEA90D525ABE757004EA02F /* Floating Marker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBEA90CD25ABE757004EA02F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					BBEA90D425ABE757004EA02F = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+				};
+			};
+			buildConfigurationList = BBEA90D025ABE757004EA02F /* Build configuration list for PBXProject "Floating Marker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBEA90CC25ABE757004EA02F;
+			packageReferences = (
+			);
+			productRefGroup = BBEA90D625ABE757004EA02F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBEA90D425ABE757004EA02F /* Floating Marker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBEA90D325ABE757004EA02F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4DBBA525ACCF1B005D7D84 /* keyboardMappingsDescriptions.plist in Resources */,
+				BB50DA17264CC98C00EB53C5 /* SavePanels.xib in Resources */,
+				BBE0BA0E25D9FC4E00C9D5A6 /* fmAppDefaults.plist in Resources */,
+				BBEA90E025ABE759004EA02F /* Assets.xcassets in Resources */,
+				BBEA90DE25ABE757004EA02F /* FMDocument.xib in Resources */,
+				BBEA90E325ABE759004EA02F /* MainMenu.xib in Resources */,
+				BB9DF36C25DCF41900BA5319 /* KeyboardButtonBgImages.xcassets in Resources */,
+				BBFD5E9A25B4A1CE00F151B1 /* notesForPenciKit.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBEA90D125ABE757004EA02F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBEA90DB25ABE757004EA02F /* FMDocument.swift in Sources */,
+				BB2665022618E07A00AE97F8 /* FitCurves.swift in Sources */,
+				BBEA90F225ABF5FD004EA02F /* DrawingPage.swift in Sources */,
+				BB68E4AE25ACA87F00145A1F /* FMPanel.swift in Sources */,
+				BB3FADEB25B94C0200B3A47F /* FBBezierGraph.swift in Sources */,
+				BB9309D82694F63600028279 /* GroupDrawable.swift in Sources */,
+				BB3FAE1325B94DF100B3A47F /* WFGeometry.c in Sources */,
+				BB3FADF325B94C0200B3A47F /* FBBezierIntersection.swift in Sources */,
+				BB2EDE2126183A6B00D48BB7 /* NoiseConfigurationViewController.swift in Sources */,
+				BB1A830F25F6E902002701AD /* EllipseDrawingEntity.swift in Sources */,
+				BBEA90FE25ABF75A004EA02F /* InputInteractionManager.swift in Sources */,
+				BBA5E86225F9AAED00062525 /* SVGPath.swift in Sources */,
+				BB3FADE825B94C0200B3A47F /* FBCurveLocation.swift in Sources */,
+				BB5DD905261D278E00163715 /* FMImageDrawable.swift in Sources */,
+				BBE0BA1425DA3BB100C9D5A6 /* NCTDrawingPageController.swift in Sources */,
+				BB317F7625FABA850006256F /* DynamicTree.swift in Sources */,
+				BB1A831225F6EA85002701AD /* ShapeKeysConfigPopoverViewController.swift in Sources */,
+				BB0BE26D25AF880500C4F3C1 /* NCTKeyCodes.swift in Sources */,
+				BBF3CC03262BE5EA006A4899 /* FMLightDrawable.swift in Sources */,
+				BB2EDE2226183A6B00D48BB7 /* ReplicationConfigurationViewController.swift in Sources */,
+				BB3FAE0F25B94DE000B3A47F /* NSBezierPath+WFBezierCombinatorics.m in Sources */,
+				BBEA910125ABF77A004EA02F /* InkAndLineSettingsManager.swift in Sources */,
+				BBFD5E9325B47B4E00F151B1 /* KeyboardButton.swift in Sources */,
+				BB0BE27125AFABBE00C4F3C1 /* NCTUtilities.swift in Sources */,
+				BB1A830925F6E8E6002701AD /* RectangleDrawingEntity.swift in Sources */,
+				BB317F7925FBB5660006256F /* Hull.swift in Sources */,
+				BB317F8125FBB5FD0006256F /* Convex.swift in Sources */,
+				BB742DCE25B3842300847B46 /* NCTColorListUsage.swift in Sources */,
+				BB3FADE925B94C0200B3A47F /* FBContourOverlap.swift in Sources */,
+				BBD3DD6825BC0C91005AEE27 /* Point2DRepresentable.swift in Sources */,
+				BB2EDE2826183ECA00D48BB7 /* NSBezierPath-OAExtensions.m in Sources */,
+				BB3FADF725B94C0200B3A47F /* FBBezierCurve.swift in Sources */,
+				BBEA90F825ABF623004EA02F /* PaperLayer.swift in Sources */,
+				BBEA90EF25ABF5EE004EA02F /* DrawingBoard.swift in Sources */,
+				BB3FADEE25B94C0200B3A47F /* FBEdgeOverlapRun.swift in Sources */,
+				BBEA90F525ABF60F004EA02F /* ActivePenLayer.swift in Sources */,
+				BBE0BA0A25D650F400C9D5A6 /* NCTQuad.swift in Sources */,
+				BB317F7B25FBB5F40006256F /* Format.swift in Sources */,
+				BB580E8425D0E26700323515 /* FMDrawable.swift in Sources */,
+				BB3FADF925B94C0200B3A47F /* Int_Extn.swift in Sources */,
+				BBE0BA1125DA00B300C9D5A6 /* NCTColorPicker.swift in Sources */,
+				BB742DD225B3B8D500847B46 /* FMKeyboardPanel.swift in Sources */,
+				BB2C2EEE2619267100B21F83 /* UniformFillConfigPopoverViewController.swift in Sources */,
+				BB3FADF825B94C0200B3A47F /* LRTBezierPathWrapper.swift in Sources */,
+				BB3FADF225B94C0200B3A47F /* FBEdgeOverlap.swift in Sources */,
+				BBF4CAB92660AC9800459203 /* PreviewViews.swift in Sources */,
+				BB2C2EF126192B4F00B21F83 /* NSBezierPath+NCTExensions.m in Sources */,
+				BB3FADF525B94C0200B3A47F /* CGPath.swift in Sources */,
+				BB3FADEA25B94C0200B3A47F /* FBEdgeCrossing.swift in Sources */,
+				BBAB51D425B1FA4600522CC2 /* NCTSegmentedControls.swift in Sources */,
+				BB317F8325FBB6010006256F /* Grid.swift in Sources */,
+				BB3FADF425B94C0200B3A47F /* BooleanPathsView.swift in Sources */,
+				BBEA910725ABFCAE004EA02F /* NCTExtensions.swift in Sources */,
+				BB0BE26A25AF86B400C4F3C1 /* NCTControls.swift in Sources */,
+				BB5DD902261D25B400163715 /* NCTCAReplicatorLayer.swift in Sources */,
+				BB3D605525F95AAB003EF481 /* FMShapeKeyDrawable.swift in Sources */,
+				BB3FADF125B94C0200B3A47F /* FBBezierContour.swift in Sources */,
+				BB3FADF625B94C0200B3A47F /* FBGeometry.swift in Sources */,
+				BBC00A1225B7EEEC00AB9D11 /* FMStroke.swift in Sources */,
+				BBD3DD6725BC0C91005AEE27 /* SwiftSimplify.swift in Sources */,
+				BBFD5E9525B47B5100F151B1 /* KeyboardMappingsManager.swift in Sources */,
+				BBEA90D925ABE757004EA02F /* AppDelegate.swift in Sources */,
+				BB317F7F25FBB5FA0006256F /* Intersect.swift in Sources */,
+				BB3FADF025B94C0200B3A47F /* NSBezierPath_Boolean.swift in Sources */,
+				BB3FADEC25B94C0200B3A47F /* FBBezierIntersectRange.swift in Sources */,
+				BB317F7D25FBB5F80006256F /* HullHelper.swift in Sources */,
+				BBEA910425ABF783004EA02F /* LineWorkInteractionEntity.swift in Sources */,
+				BB3FADED25B94C0200B3A47F /* NSBezierPath_Utilities.swift in Sources */,
+				BB1A830625F6E8D2002701AD /* DrawingEntity.swift in Sources */,
+				BBB88BA526AD1C990067023F /* PhyllotaxisView.swift in Sources */,
+				BB3FADEF25B94C0200B3A47F /* FBBezierCurve_Edge.swift in Sources */,
+				BBC8EB4C262ACF690083489D /* NCTColorPickerGridView.swift in Sources */,
+				BB1A830C25F6E8F6002701AD /* ShapeInQuadDrawingEntity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BBEA90DC25ABE757004EA02F /* FMDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBEA90DD25ABE757004EA02F /* Base */,
+			);
+			name = FMDocument.xib;
+			sourceTree = "<group>";
+		};
+		BBEA90E125ABE759004EA02F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBEA90E225ABE759004EA02F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBEA90E625ABE759004EA02F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BBEA90E725ABE759004EA02F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BBEA90E925ABE759004EA02F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Floating Marker/Floating_Marker.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "Floating\\ Marker/Keyboard/KeyboardButtonBgImages.xcassets Floating\\ Marker/Assets.xcassets";
+				DEVELOPMENT_TEAM = 6UWJYVDQ2M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Floating Marker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noctivagous.floating-marker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Floating Marker/Floating Marker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BBEA90EA25ABE759004EA02F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Floating Marker/Floating_Marker.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "Floating\\ Marker/Keyboard/KeyboardButtonBgImages.xcassets Floating\\ Marker/Assets.xcassets";
+				DEVELOPMENT_TEAM = 6UWJYVDQ2M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Floating Marker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noctivagous.floating-marker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Floating Marker/Floating Marker-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBEA90D025ABE757004EA02F /* Build configuration list for PBXProject "Floating Marker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBEA90E625ABE759004EA02F /* Debug */,
+				BBEA90E725ABE759004EA02F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBEA90E825ABE759004EA02F /* Build configuration list for PBXNativeTarget "Floating Marker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBEA90E925ABE759004EA02F /* Debug */,
+				BBEA90EA25ABE759004EA02F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBEA90CD25ABE757004EA02F /* Project object */;
+}

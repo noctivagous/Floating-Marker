@@ -1,0 +1,665 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica-BoldOblique;\f2\fswiss\fcharset0 Helvetica;
+\f3\fswiss\fcharset0 Helvetica-Oblique;\f4\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww29120\viewh17780\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs36 \cf0 Floating Marker
+\fs32  notes\
+
+\f1\i \
+\
+NOTES ON PERLIN NOISE APPLIED TO BEZIER PATHS:\
+\
+
+\f2\i0\b0 The hairline effects are a product of the technique for unioning of\
+marker segments, because they have their offset set to -1 .  That offset was placed\
+there so that the unioning will work and not eliminate duplicate points.\
+\
+To get rid of the hairline effects, first simplify the path like for its final output, then\
+use DrawKit\'92s makeFragmentedSegments with spacing of 1,\
+and this will produce a noised outcome without hairline effects.
+\f1\i\b \
+\
+\
+\
+\'97\'97\'97\'97\
+\
+A drawing tool that produces hard line work in a fluid and natural way. \
+
+\f0\i0 \
+You won\'92t find this type of drawing app anywhere: this method of \
+interacting with a computer, for design drawing, has never been revealed.\
+\
+
+\f2\b0 \
+Every product designer is trained in art school to sketch with hard lines.  Your computer\'92s case, for example, has hard surfaces, so it has hard lines.\
+\
+But, hard lines have always been frustrating to lay down quickly with a desktop computer and mouse.  The mouse isn\'92t considered very accurate for drawing, either.  That is why designers have typically relied on electronic styluses and tablets for design sketching.\
+\
+Floating Marker turns this upside down: the mouse is now the very best tool to use for sketching hard surfaces.\
+\
+How come? Noctivagous has programmed the user interaction in a totally different way\
+compared to conventional vector-drawing apps.  Instead of clicking with the mouse like you usually would,\
+you use your keyboard and mouse 
+\f3\i in conjunction
+\f2\i0 , in real-time, to lay out drawings.  It feels mechanical, but also free of encumbrances.\
+\
+Using the app feels like your drawing implement is flying inside an 
+\f3\i Etch-a-Sketch
+\f2\i0 , \
+but you actually have control over the outcome of your drawing (unlike that children\'92s toy).\
+\
+The result of this: design objects that were impossible to sketch quickly with the mouse\
+can be laid down in a matter of minutes in Floating Marker.  If they were simple to sketch by\
+hand already, this program makes the process more agile.\
+\
+When you use the program, you make use of the keyboard and mouse\
+in combination, alternating between the two in real-time to lay down points.  \
+\
+A manual is provided with the app to get you up and running
+\f0\b  and it won\'92t take long
+\f2\b0  because\
+using the program is more like interacting with a physical, mechanical device.\
+\
+\'97\
+\
+One key lays down round corners.  Another hard corners.  You press them as you draw, and\
+it won\'92t take long before you put together sophisticated product or design drawings.\
+This is altogether different than conventional vector-drawing programs.  We call it an\
+
+\f3\i interactive drawing machine
+\f2\i0 , just implemented as software program instead of a physical\
+object.\
+\
+If someone has practiced with the program, it takes less than a few minutes to sketch the \
+Apple logo accurately with the mouse, something impossible with today\'92s vector-drawing programs.\
+Speed is important, but it is the the feeling that matters: it is akin to using pencil and paper.  \
+That\'92s why we call the experience of using it 
+\f3\i freehand-mechanical
+\f2\i0 .\
+\
+Because of this tool\'92s dedication to agile design sketching, new product scenarios can be investigated quickly.  \
+\
+Floating Marker\'92s intended audience is the broad spectrum of design fields, such as \
+architectural design, product design, fashion design, etc.  These fields rely on hard lines (as opposed to organic) for making sketches of objects.\
+\
+This is a sketch utility, not a production output app. Shading features have been omitted to keep the application consistent with with its original purpose.\
+\
+\
+\
+\'97\
+\
+The conventional understanding is that there is a trade-off according to\
+line type: drawing on a tablet with a stylus will produce organic lines quickly, and although\
+they can be made hard by the software, the effect is not the same as plotting out\
+vector lines by hand with a mouse.  Floating Marker is something different: it is hard lines\
+that are produced quickly, with the mouse.\
+\
+The rigidity a person encounters with a computer has been re-routed to shape hard surfaces a person\
+draws when design-sketching.\
+\
+\'97\
+\
+This is a sketch utility.  Shading features have been omitted to keep the application [on task] and helpful as\
+something to be opened.  \
+\
+
+\f0\b Differences in User Interaction with The Program\
+
+\f2\b0 \
+Everyone has heard of the Bezier path, the focus of all 2D vector-drawing programs today. Floating Marker centers on the utilizing an alternative to this, called the B-Spline.\
+\
+At the same time, the B-Spline is utilized by Floating Marker in a radically different way, such that it\
+facilitates live design sketching.  The user need only practice a little bit before.\
+\
+In summary, two things join together: a different approach to drawing lines and curves, the B-Spline and\
+the approach that Floating Marker takes to implement interactivity with this B-Spline.\
+\
+Floating Marker does this by relying on the keyboard in a way other programs never have:\
+line work is established by the designer jumping across various line drawing keys in real-time.\
+\
+This is something that has to be experienced rather than read about, as it is unlike other programs.\
+In short, the designer will be depositing vector points in different mode of interaction. \
+Where the mouse would have normally been clicked, a keyboard key has been used instead for the click.\
+Used in combination, these keys allow complex shapes to be assembled in\
+a fluid way resembling regular drawing on paper with pens and markers.\
+Multiple keys dedicated to line work.\
+\
+\
+Floating Marker uses the B-Spline instead of the Bezier Path\
+\
+
+\f0\b More about the B-Spline
+\f2\b0 \
+\
+In the field of computer graphics, the B-Spline is used to describe\
+the points that surround curves.  It is mostly used in 3D programs and is \
+regarded as something that is difficult to use in real-time.  However, Floating Marker provides\
+a keyboard interaction setup that makes fluid use of B-Splines in real-time\
+using the mouse, something totally different for a sketch program to provide\
+\
+Although the B-Spline is usually regarded as unwieldy when using the mouse, \
+Floating Marker takes this technology and ties it into a special user interaction setup\
+such that the dynamic is flipped completely and the B-Spline is now exceptionally\
+capable for the designer in real-time.\
+\
+B-Spline can be made use of in a way not intended or conventionally utilized, that\
+the depositing of multiple points can allow rounded corners to be made manually.  \
+But also, there is a rounded corner button.\
+\
+\
+Yet, there is power in this utility that will attract the professional designer.  \
+Fluid, hard line work is the central objective of this program, and \
+\
+What if a drawing program you were using could lay down curves just as effectively\
+as an Etch-a-Sketch lays down hard lines? \
+\
+
+\f0\b Another Description of Floating Marker\
+
+\f2\b0 \
+Everyone has played with an Etch-a-Sketch before. That children\'92s toy always feels like it has something going for\
+it, but becomes impossible to use after a few straight lines are drawn.  What specifically it has going for it is\
+that it feels mechanical and you feel like you are in control when you are drawing that straight line.\
+Conventional vector-drawing computer programs never have felt that way.  If the 
+\f3\i Etch-a-Sketch
+\f2\i0  were\
+ever modified to work well in all respects, one might be in possession of a genuinely useful design tool.\
+\
+The experience of using Floating Marker is mechanical, too, as if an 
+\f3\i Etch-a-Sketch
+\f2\i0  were made capable of\
+laying down curves and hard lines in real time, which is powerful for the designer.  However, it has no connection to that \
+toy device, nor does it try to imitate it in any way.\
+\
+\
+\'97\'97\
+\'97\'97\
+\'97\'97\
+\'97\'97\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+KEYS and commands\
+\
+
+\f0\b - \'91Q\'92 for removing current line/point in progress
+\f2\b0 \
+
+\f0\b \
+- Delete key - remove last stroke
+\f2\b0 \
+
+\f0\b \
+- Command + delete - remove all strokes
+\f2\b0 \
+\
+- V - adjust application vanishing point\
+\
+- Control + V - deposit user vanishing point\
+- Option + V - clear user vanishing points\
+\
+- Option + 1 - Layer 1\
+- Option + 2 - Layer 2\
+- Option + 3 - Layer 3\
+\
+
+\f0\b - Dab key will activate triangles or rectangles on ornamental grid
+\f2\b0 \
+\
+\'97\
+Titlebar views\
+[Canvas Size] [Magnification] [Instant Capture to Disk] [Layers popupbutton] [Marker Summary][Angle Snap Degrees If AngleSpapping Enabled][Snapping Summary]\
+ \
+\
+\'97\
+\
+\
+For unioning:\
+	- If distance from\
+	midpoint of previous brush location is greater than\
+	distance of increment for loop\
+	because of multiple B-spline points,\
+	then interpolate for the gaps\
+	right there, inside the loop that\
+	is meant only to do one union if the distance is\
+	the same between them.\
+\
+\
+\'97\'97\
+\
+1. when stroke path\'92s normal\
+is the same as the brush\'92s normal,\
+make a stamp on the brushStampPath\
+	- the stamps will be flattened with some spacing and\
+	then used for evaluation when comparing\
+	the nearby paths to the normal path.\
+	this way, there is no need to use the union function.\
+\
+3. closest point to normal point \
+from all six paths.\
+closest from that array.\
+	- the first normal point will be compared to the\
+	greatest of all three rectangle points.\
+\
+\
+longest distance from strokePath of\
+the three lines\
+\
+dist()\
+\
+longestDistanceFromStrokePathOfTheThreeRightLines\
+rightmostPoint\
+rightmostPointPath\
+\
+longestDistanceFromStrokePathOfTheThreeRightLines\
+leftmostPoint\
+leftmostPointPath\
+\
+\
+\
+startsToDecreasePath\
+startsToIncreasePath\
+\
+\
+// Place an additional brush stamp \
+// wherever the slope angle\
+// is equal to the brush tip angle.\
+// Otherwise there will be gaps\
+// and missing ends on the marker stroke\'92s bends.\
+// Converted to flipped coordinates:\
+360MinusAnglePathRangeOf5Pt\
+\
+\
+Move along the normals of the path,\
+on each side of the path.\
+\
+Check all six outline paths\
+and whichever contains the outermost point\
+has the point added.\
+\
+\'97\'97\
+\
+1. green and blue\
+\
+2. blue and yellow\
+\
+\
+\'97\
+\
+3. blue and red\
+4. red and brown\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+
+\f0\b Replace PKInk with FMInk
+\f2\b0 \
+\
+FMInk\
+	- brushTipShape\
+		- Circle \'97> uses regular strokePath from Quartz with lineCap and lineJoin set to round\
+		- Ellipse\
+		- Rectangle\
+		- Diamond\
+	- widthMultipier = 0.25 (of rectangle height)\
+	- color\
+\
+
+\f0\b Cached Convex Hull Bezier Path Result
+\f2\b0 \
+\
+Point are collected from flattened path of\
+brush tip shape, such as oval or diamon.\
+\
+As shape is repeated, its flattened points\
+are deposited into the convex hull array.\
+\
+The resulting bezier path is stored as\
+a cached bezier path and it is that\
+bezier path that is drawn on the PaperLayer.\
+\
+Initially, until this is in place, it will just be the NSImage cache\
+of the shape repeated across the path, captured\
+into the context (lockFocus) of the NSImage.\
+\
+It\'92s also ok to test the computational efficiency\
+of unioning all of the shapes, even though\
+there are very many.\
+\
+Also, if none are efficient enough\
+to do in real-time, allow export to vector\
+and provide a live progress bar for the export,\
+for whatever technique.\
+\
+\'97\'97\'97\'97\
+\
+Another technique for interlace is to\
+produce the line through repetition,\
+but use the line that\
+sits on top as a mask, at the section\
+where it overlaps.\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\
+\
+
+\f0\b Double-deposit a PKStroke for hard strokes
+\f2\b0 \
+\
+\
+\'97\'97\'97\
+\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\
+\
+
+\f0\b Titlebar views
+\f2\b0 \
+\
+1. Layers\
+titlebarView: NSPopUpButton for 3 layers,\
+with layer 1 being default.\
+\
+Layer 0 	^0 \
+Layer 1 	^1 \
+Layer 2 	^2\
+\
+2.  Canvas Size\
+	- by paper\
+	- by aspect ratio\
+\
+3. Magnification\
+\
+4. Ink Summary\
+\
+\
+\
+\
+\'97\'97\'97\'97\
+\
+\
+	- Number keys are always fixed \ul width\ulnone  settings.  When a setting is changed, the palette immediately selects the ` key, which activates the single custom setting.  There is only one custom setting at a time.\
+		-  minus and equals keys alter the width factor of the entire row of fixed width settings and the current setting will be multiplied or divided by a factor of 2.\
+	\
+	- Numberpad keys alter direction of azimuth according to angle.\
+\
+	- Cmd + number keys corresponds to shades of gray, with 1 being black and 0 being white.\
+	- Instant Screenshot to 
+\f3\i Pictures
+\f2\i0 , No Dialog Box: Command + D.\
+\
+\
+\
+	- File format is  .fmkr\
+\
+\
+\
+
+\f1\i\b CurrentLineIs[bSpline,hardCorner,roundCorner,bowedHardCorner,bowedRoundCorner]
+\f2\i0\b0 \
+\
+1.  When going from a transitional LineType to bSpline\
+\
+	func depositOneBSplinePoint()\
+	\{\
+	\}\
+\
+	func depositTwoBSplinePoints()\
+	\{\
+	\}\
+\
+	// The bSplineBreak key is separated from\
+	// the hardCorner key.\
+	func bSplineBreakKeyPress()  // v\
+	\{\
+		// deposit three points\
+		depositThreeBSplinePoints()\
+	\
+	\}\
+\
+	func bSplineKeyPress()\
+	\{\
+		if(currentLineType != .bSpline)\
+		\{\
+			let bSplineTransitionalLineTypes = [.hardCorner,.roundCorner,.bowedHardCorner,.bowedRoundCorner]\
+\
+			if( bSplineTransitionalLineTypes.contains(currentLineType) )\
+			\{\
+				depositPointForCurrentLineType(_ currentLineType : LineType, point : CGPoint); \
+		\
+				// 2. set the currentLineType to .bSpline\
+				currentLineType = .bSpline\
+\
+				// 3.  return the function, doing nothing else.					return;\
+\
+			\}\
+		\
+		\}\
+		else\
+		\{\
+			depositPointForCurrentLineType(_ currentLineType : LineType, point : CGPoint);			\
+		\}\
+\
+	\}\
+\
+	var firstPointOfCurrentStroke : CGPoint;\
+\
+	func completeTheShapeKey() // r\
+	\{\
+		if(currentLineType != .roundCorner)\
+		\{\
+			depositPointForCurrentLineType(_ currentLineType : currentLineType, point : firstPointOfCurrentStroke); \
+		\}\
+		else\
+		\{\
+			// store the existing firstPoint\
+			// bring the first point (or multiple if hardCorner was the first key press) over\
+			// deposit point at original firstPoint\
+			// complete line segment to moved firstPoint\
+		\}\
+\
+	\}\
+\
+\
+\
+\
+\
+// if( isOneOf(currentLineType, []) )\
+\
+\
+\
+\
+LineType enum\
+	.bSpline,\
+	.hardCorner,\
+	.roundCorner\
+	.bowedHardCorner\
+	.bowedRoundCorner\
+	.arcHardCorner\
+	//.arcRoundCorner\
+\
+\
+each key \
+	1 - finishes the business of the last key pressed (the currentLine)\
+	drawingKeyPointDeposit(_ currentLineType : LineType, point : CGPoint)\
+	\
+	2 - changes the global currentLine to itself.\
+	currentLineType = (((whatever its own line type is)))\
+\
+\
+but if the key is finishing its own business\
+it passes its corresponding \
+\
+func drawingKeyPointDeposit(_ currentLineType : CurrentLineType, point : CGPoint)\
+\
+\
+\
+It isn\'92t natural to jump\
+from a hardCorner point to a bSpline point.\
+\
+\
+
+\f0\b Color by typing
+\f2\b0 \
+Press the \'91c\'92 key, then start typing the name\
+of the color.  Press return when the desired color shows up.\
+  B, l, u, e, 
+\f4 return  will have selected Blue.\
+
+\f2 \
+This autocomplete menu uses the NSTextControlDelegate \
+completion example found in documentation.\
+\
+A window appears inside the document window.\
+\
+\
+All colors available in the Crayons NSColorList will be available for autocomplete.\
+The Crayons will also be shown in a vertical side panel.\
+\
+\
+
+\f0\b z and x activate undo and redo respectively, without the use of\
+modifier keys
+\f2\b0 \
+\
+\
+\
+\'97\'97\'97\
+\
+
+\f0\b Oval bounding box\
+
+\f2\b0 	\'91L\'92 key.  after four points are drawn, the box is completed\
+	and the program completes the b-spline points that sit\
+	outside the bounding box, to make an oval that sits inside.\
+\
+\'97\'97\'97\
+\
+\
+Locate closed area at the mouse point, \
+inside the NSImage, and then fill with vector shape.\
+\
+\
+\'97\'97\
+Application Layout\
+\
+\
+LineWorkInteractionEntity\
+\
+	lineWorkEntityState : LineWorkEntityState\
+		idle\
+		isInDrawing\
+		\
+\
+	// currentLineIs\
+	lineWorkEntityMode : LineWorkEntityMode\
+		bSpline\
+		roundedCorner\
+		hardCorner\
+\
+\
+\
+InkAndLineSettingsManager    // Sits at the application level in the MainMenu nib\
+				// Manages information flow from Ink Settings window, which is global for all documents\
+  	                           // No need to message each document because\
+				// each document\'92s LineWorkInteractionEntity will\
+				// call the InkSettingsManager to get the global settings for drawing.\
+\
+\
+	currentPKInk : PKInk\
+	currentAzimuthDegrees\
+	currentAzimuthRadiansComputed\
+	currentAltitudeDegrees\
+	currentAltitudeRadiansComputed\
+	brushSize : CGFloat = 10 clamped\
+\
+\
+	pointSnapping : Bool \
+	angleSnapping : (Bool : inUse, CGFloat : degrees); // tuple\
+	lengthSnapping : (Bool : inUse, CGFloat : distancePt);  // tuple\
+\
+\
+		\
+InputInteractionManager  // Also sits at the application level in the MainMenu nib because\
+				    // it manages the keyboard window.\
+				    // Each activePenLayer will send raw input here and the results of\
+				    // the analysis, based on the dictionary of keyboard settings, \
+				    // will be sent to the current document\'92s LineWorkInteractionEntity.\
+				    //   (e.g.  f key will make the InputInteractionManager activate the lineByBSpline() function in the\
+				    //    the current document\'92s LineWorkInteractionEntity)\
+				    // (The activePenLayer must send a reference to itself and the LineWorkInteractionEntity\
+\
+\
+\
+\
+FMDocument\
+\
+	IBOutlet drawingBoard : DrawingBoard // inherits from NSView.\
+							       // is the embedded documentView for NSScrollView\
+  						                // It holds the drawingPage (layers), surrounds it with \
+						                // horizontal and vertical margins.\
+\
+\
+		horizontalMargin : CGFloat\
+		verticalMargin : CGFloat\
+\
+\
+		func drawingPageDidResize\
+		func repositionDrawingPageWithMargins\
+\
+\
+		drawingPage : DrawingPage // the drawing layers and activePenLayer\
+			drawingBoard (the superview)\
+\
+			\
+			paperSize\
+\
+			func paperSizeDidChange() // resize both activePenLayer and paper layers in tandem,\
+								// then notify drawingBoard\
+\
+			activePenLayer: ActivePenLayer\
+				activePenPKDrawing : PKDrawing\
+\
+				inputInteractionManager : InputInteractionManager\
+				mouseDown sends to inputInteractionManager\
+				mouseUp sends to inputInteractionManager\
+				mouseMoved sends to inputInteractionManager\
+				keyDown sends to inputInteractionManager\
+				keyUp. sends to inputInteractionManager\
+				\
+\
+			paperLayers: [PaperLayer]\
+				pKDrawing : PKDrawing\
+\
+\
+\
+\'97\
+\
+PaperSize\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
