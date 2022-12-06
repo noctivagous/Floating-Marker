@@ -726,7 +726,7 @@ class NCTDrawingPageController: NSObject, NSPopoverDelegate, NSTableViewDataSour
             if(stringForWidth.count > 2)
             {
                 let secondUnitLetter = stringForWidth.lastIndex(of: stringForWidth.last!)!;
-                let firstUnitLetter = stringForWidth.index(secondUnitLetter, offsetBy: String.IndexDistance.init(-1))
+                let firstUnitLetter = stringForWidth.index(secondUnitLetter, offsetBy: -1);
             
                
             
@@ -756,7 +756,7 @@ class NCTDrawingPageController: NSObject, NSPopoverDelegate, NSTableViewDataSour
             if(stringForHeight.count > 2)
             {
                 let secondUnitLetter = stringForHeight.lastIndex(of: stringForHeight.last!)!;
-                let firstUnitLetter = stringForHeight.index(secondUnitLetter, offsetBy: String.IndexDistance.init(-1))
+                let firstUnitLetter = stringForHeight.index(secondUnitLetter, offsetBy: -1);
             
 
                 let a = stringForHeight[firstUnitLetter...secondUnitLetter];
