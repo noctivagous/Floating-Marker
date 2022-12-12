@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -51,7 +51,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="ZjD-V0-9Zy">
                         <rect key="frame" x="0.0" y="0.0" width="243" height="124"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="r0S-2i-2ms">
                                 <rect key="frame" x="0.0" y="0.0" width="243" height="124"/>
@@ -1412,7 +1412,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" id="MNE-Jg-vP6">
                             <rect key="frame" x="1" y="1" width="1459" height="1020"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7aA-h9-ViL" customClass="NCTFlippedNSView" customModule="Floating_Marker" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="20" width="1500" height="1000"/>
@@ -2547,7 +2547,7 @@
                                                         <rect key="frame" x="-5" y="61" width="177" height="1"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <view key="contentView" id="Wua-sZ-pN7">
-                                                            <rect key="frame" x="1" y="1" width="175" height="0.0"/>
+                                                            <rect key="frame" x="1" y="0.5" width="175" height="0.0"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                     </box>
@@ -2555,7 +2555,7 @@
                                                         <rect key="frame" x="-3" y="123" width="177" height="1"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <view key="contentView" id="AeE-ka-16H">
-                                                            <rect key="frame" x="1" y="1" width="175" height="0.0"/>
+                                                            <rect key="frame" x="1" y="0.5" width="175" height="0.0"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                     </box>
@@ -4137,7 +4137,7 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                                         <clipView key="contentView" drawsBackground="NO" id="KZD-XK-K7C">
                                                             <rect key="frame" x="0.0" y="0.0" width="33" height="73"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="gTY-y4-K63">
                                                                     <rect key="frame" x="0.0" y="0.0" width="33" height="73"/>
@@ -4178,7 +4178,7 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                                         <clipView key="contentView" drawsBackground="NO" id="rox-x5-yP6">
                                                             <rect key="frame" x="0.0" y="0.0" width="139" height="73"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="qXd-wb-rVq">
                                                                     <rect key="frame" x="0.0" y="0.0" width="139" height="73"/>
@@ -4269,7 +4269,7 @@ tones of current color</string>
                                                         <rect key="frame" x="1" y="142" width="177" height="3"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <view key="contentView" id="rfS-1N-077">
-                                                            <rect key="frame" x="7" y="2" width="163" height="0.0"/>
+                                                            <rect key="frame" x="7" y="1.5" width="163" height="0.0"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                         <color key="borderColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4375,7 +4375,7 @@ tones of current color</string>
                                                         <rect key="frame" x="1" y="90" width="177" height="3"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <view key="contentView" id="1Re-VP-12s">
-                                                            <rect key="frame" x="7" y="2" width="163" height="0.0"/>
+                                                            <rect key="frame" x="7" y="1.5" width="163" height="0.0"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                         <color key="borderColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

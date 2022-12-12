@@ -823,7 +823,7 @@ class FMDocument: NSDocument, NSWindowDelegate {
             
             //Swift.print(fileURL.path)
             
-            saveToURLUsingSettings(url: fileURL, settingsDictionary: ["fileFormat": fileTypeForInstantExport], includesBackground: includeBackgroundForInstantExport, isSelectedDrawablesOnCurrentLayer: false, croppingRectangle: drawingPageController!.exportFrame)
+            saveToURLUsingSettings(url: fileURL, filetypeForExport: fileExtension, settingsDictionary: ["fileFormat": fileTypeForInstantExport], includesBackground: includeBackgroundForInstantExport, isSelectedDrawablesOnCurrentLayer: false, croppingRectangle: drawingPageController!.exportFrame)
             
             
         }
@@ -863,12 +863,13 @@ class FMDocument: NSDocument, NSWindowDelegate {
             
             var fileURL = desktopURL.appendingPathComponent(fileNameForInstantExportWithoutFileExtension)
             
-            let fileExtension = self.exportSavePanelFileTypePopUpButton.selectedItem!.title;
+            let fileExtension = fileTypeForInstantExport;
+            //self.exportSavePanelFileTypePopUpButton.selectedItem!.title;
             fileURL.appendPathExtension("\(fileExtension.lowercased())")
             
-            //Swift.print(fileURL.path)
+            Swift.print("instant export canvas: " + fileURL.path);
             
-            saveToURLUsingSettings(url: fileURL, settingsDictionary: ["fileFormat":fileTypeForInstantExport], includesBackground: includeBackgroundForInstantExport, isSelectedDrawablesOnCurrentLayer: false, croppingRectangle: drawingPage.bounds)
+            saveToURLUsingSettings(url: fileURL, filetypeForExport: fileExtension, settingsDictionary: ["fileFormat":fileTypeForInstantExport], includesBackground: includeBackgroundForInstantExport, isSelectedDrawablesOnCurrentLayer: false, croppingRectangle: drawingPage.bounds)
             
             
         }
@@ -878,6 +879,9 @@ class FMDocument: NSDocument, NSWindowDelegate {
 
      @IBAction func instantExportSelectedToDownloads(_ sender: AnyObject?)
      {
+     
+        Swift.print("instantExportSelectedToDownloads");
+     
         guard drawingPage.currentPaperLayer.hasSelectedDrawables else {
             return;
         }
@@ -911,12 +915,17 @@ class FMDocument: NSDocument, NSWindowDelegate {
             let fileNameForInstantExportWithoutFileExtension = "\(self.displayName!)\(suffix)" + dateString
             
             var fileURL = desktopURL.appendingPathComponent(fileNameForInstantExportWithoutFileExtension)
-                        let fileExtension = self.exportSavePanelFileTypePopUpButton.selectedItem!.title;
+            
+            let fileExtension = fileTypeForInstantExport;
+            
             fileURL.appendPathExtension("\(fileExtension.lowercased())")
 
            // Swift.print(fileURL.path)
             
-            saveToURLUsingSettings(url: fileURL, settingsDictionary: ["fileFormat":fileTypeForInstantExport], includesBackground: includeBackgroundForInstantExport, isSelectedDrawablesOnCurrentLayer: true, croppingRectangle: drawingPageController!.exportFrame)
+            
+            Swift.print("instantExportSelectedToDownloads: " + fileURL.absoluteString);
+            
+            saveToURLUsingSettings(url: fileURL, filetypeForExport: fileExtension.lowercased(), settingsDictionary: ["fileFormat":fileTypeForInstantExport], includesBackground: includeBackgroundForInstantExport, isSelectedDrawablesOnCurrentLayer: true, croppingRectangle: drawingPageController!.exportFrame)
             
             
         }
@@ -948,25 +957,31 @@ class FMDocument: NSDocument, NSWindowDelegate {
     }
     
     // MARK: SAVE TO URL
-    func saveToURLUsingSettings(url:URL,settingsDictionary:Dictionary<String,Any>, includesBackground:Bool, isSelectedDrawablesOnCurrentLayer:Bool,croppingRectangle: NSRect?)
+    func saveToURLUsingSettings(url:URL, filetypeForExport:String, settingsDictionary:Dictionary<String,Any>, includesBackground:Bool, isSelectedDrawablesOnCurrentLayer:Bool,croppingRectangle: NSRect?)
     {
+        
+        Swift.print("saveToURLUsingSettings:" + url.absoluteString + " " + filetypeForExport);
         
         //Swift.print(urlForSaving.path)
         //let fileFormat = settingsDictionary["fileFormat"]
     
         var pdfData : Data!
 
-        if(self.exportSavePanelFileTypePopUpButton.selectedItem?.title == "SVG")
+        let filetypeForExportLowercased = filetypeForExport.lowercased();
+
+        if(filetypeForExportLowercased == "svg")
         {
             var svgData : Data!
 
             do {
                 if(isSelectedDrawablesOnCurrentLayer)
                 {
+                    
                     svgData = self.drawingPage.currentPaperLayer.imageDataFromSelectedDrawables(type: "svg", croppingRectangle: croppingRectangle, includeBackground:includesBackground)
                 }
                 else
                 {
+                    
                     svgData = self.drawingPage.imageDataFromCroppingRect(type: "svg", croppingRectangle: croppingRectangle, includeBackground:includesBackground)
                 }
                 
@@ -983,7 +998,7 @@ class FMDocument: NSDocument, NSWindowDelegate {
             }
             
         }
-        if(self.exportSavePanelFileTypePopUpButton.selectedItem?.title == "PDF")
+        if(filetypeForExportLowercased == "pdf")
         {
 
             do {
@@ -1008,7 +1023,7 @@ class FMDocument: NSDocument, NSWindowDelegate {
                 alert.runModal()
             }
         }
-        else if(self.exportSavePanelFileTypePopUpButton.selectedItem?.title == "EPS")
+        if(filetypeForExportLowercased == "eps")
         {
             do {
                 var epsData : Data!
@@ -1031,7 +1046,7 @@ class FMDocument: NSDocument, NSWindowDelegate {
                 alert.runModal()
             }
         }
-        else if(self.exportSavePanelFileTypePopUpButton.selectedItem?.title == "TIFF")
+        else if(filetypeForExportLowercased == "tiff")
         {
             do {
                 
@@ -1084,7 +1099,7 @@ class FMDocument: NSDocument, NSWindowDelegate {
                 alert.runModal()
             }
         }
-        else if(self.exportSavePanelFileTypePopUpButton.selectedItem?.title == "PNG")
+        else if(filetypeForExportLowercased == "png")
         {
             do {
                 
@@ -1130,7 +1145,7 @@ class FMDocument: NSDocument, NSWindowDelegate {
                 alert.runModal()
             }
         }
-        else if(self.exportSavePanelFileTypePopUpButton.selectedItem?.title == "JPEG")
+        else if((filetypeForExportLowercased == "jpeg") || (filetypeForExportLowercased == "jpg") )
         {
             do {
                 
@@ -1214,7 +1229,7 @@ class FMDocument: NSDocument, NSWindowDelegate {
         //GRAPHITE GLIDER:
         savePanel.accessoryView = exportSavePanelAccessoryView;
       
-        let includesBackground = exportSavePanelIncludeBackgroundColorCheckbox.boolFromState;
+        
       
         savePanel.beginSheetModal(for: self.windowControllers[0].window!) { (modalResponse) in
         
@@ -1231,7 +1246,7 @@ class FMDocument: NSDocument, NSWindowDelegate {
                     
                     
                 
-                    self.saveToURLUsingSettings(url:savePanel.url!,settingsDictionary:["fileFormat": self.exportSavePanelFileTypePopUpButton.selectedItem!.title],includesBackground: includesBackground, isSelectedDrawablesOnCurrentLayer: isSelectedDrawablesOnCurrentLayer, croppingRectangle: croppingRectangle)
+                    self.saveToURLUsingSettings(url:url,filetypeForExport: fileExtension.lowercased(), settingsDictionary:["fileFormat": self.exportSavePanelFileTypePopUpButton.selectedItem!.title],includesBackground: self.exportSavePanelIncludeBackgroundColorCheckbox.boolFromState, isSelectedDrawablesOnCurrentLayer: isSelectedDrawablesOnCurrentLayer, croppingRectangle: croppingRectangle)
                 }
                 
                 
@@ -1710,6 +1725,8 @@ class FMDocument: NSDocument, NSWindowDelegate {
             XMLNode.attribute(withName: "height", stringValue: "\(croppingRectangleWithUnits.size.height)\(croppingRectangleUnits)")  as! XMLNode,
             
         ]
+        
+        Swift.print("exportCroppedSVG: " + rootSVGElement.description);
         
         let svgDoc = XMLDocument.init(rootElement: rootSVGElement);
         svgDoc.version = "1.0"

@@ -891,6 +891,8 @@ class DrawingPage: NSView
     
     func imageDataFromCroppingRect(type:String, croppingRectangle:NSRect?, includeBackground:Bool) -> Data
     {
+        print("imageDataFromCroppingRect: " + type);
+    
         var data : Data = Data.init();
      
         // --------------------
@@ -902,7 +904,10 @@ class DrawingPage: NSView
         activePenLayer.inCaptureDataState = true;
         if(type == "pdf")
         {
+            
             data = self.dataWithPDF(inside: croppingRectangle ?? self.bounds)
+            
+            
         }
         else if(type == "eps")
         {
@@ -911,20 +916,40 @@ class DrawingPage: NSView
         else if(type == "svg")
         {
             
+            print("imageDataFromCroppingRect: svg" );
+            
             if(croppingRectangle == self.bounds)
             {
+                print("export cropping rectangle == self.bounds");
+            
                 if let exportedSVGXMLDoc = drawingPageController?.fmDocument.exportedSVGDoc(includeBackground: includeBackground)
                 {
                     data = exportedSVGXMLDoc.xmlData
                 }
+                
+                print("(croppingRectangle == self.bounds) COUNT: " + String(data.count));
             
             }
             else
             {
+                print("export cropping rectangle was != self.bounds");
+            
+                if let exportedSVGXMLDoc = drawingPageController?.fmDocument.exportCroppedSVG(includeBackground: includeBackground, croppingRectanglePx: croppingRectangle ?? self.bounds, croppingRectangleWithUnits: croppingRectangle ?? self.bounds, croppingRectangleUnits: "px")
+                {
+                    data = exportedSVGXMLDoc.xmlData
+                }
+                
+                /*
+                
+                
+                
                 if let exportedSVGXMLDoc = drawingPageController?.fmDocument.exportCroppedSVG(includeBackground: includeBackground, croppingRectanglePx: croppingRectangle ?? self.bounds, croppingRectangleWithUnits: drawingPageController!.exportFrameWithUnitsNSRect, croppingRectangleUnits: drawingPageController!.exportFrameUnitsString)
                 {
                     data = exportedSVGXMLDoc.xmlData
                 }
+                */
+                
+                print("(croppingRectangle != self.bounds) COUNT:" + String(data.count));
             }
         }
         

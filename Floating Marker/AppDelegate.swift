@@ -663,6 +663,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBAction func changeInstantExportFormat(_ sender : NCTSegmentedControl)
     {
+        
+        
+    
         let s = sender.currentSegmentLabelString
         if (s != "")
         {
