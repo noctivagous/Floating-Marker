@@ -915,42 +915,33 @@ class DrawingPage: NSView
         }
         else if(type == "svg")
         {
-            
-            print("imageDataFromCroppingRect: svg" );
-            
+                        
             if(croppingRectangle == self.bounds)
             {
-                print("export cropping rectangle == self.bounds");
-            
+             
                 if let exportedSVGXMLDoc = drawingPageController?.fmDocument.exportedSVGDoc(includeBackground: includeBackground)
                 {
                     data = exportedSVGXMLDoc.xmlData
                 }
-                
-                print("(croppingRectangle == self.bounds) COUNT: " + String(data.count));
-            
+                            
             }
             else
             {
-                print("export cropping rectangle was != self.bounds");
             
-                if let exportedSVGXMLDoc = drawingPageController?.fmDocument.exportCroppedSVG(includeBackground: includeBackground, croppingRectanglePx: croppingRectangle ?? self.bounds, croppingRectangleWithUnits: croppingRectangle ?? self.bounds, croppingRectangleUnits: "px")
+                if let exportedSVGXMLDoc = drawingPageController?.fmDocument.exportCroppedSVG(includeBackground: includeBackground, croppingRectanglePx: croppingRectangle ?? self.bounds, croppingRectangleWithUnits: croppingRectangle ?? self.bounds, croppingRectangleUnits: "px",exportHiddenLayers: false)
                 {
                     data = exportedSVGXMLDoc.xmlData
                 }
                 
                 /*
-                
-                
-                
+                // For exporting the SVG with set canvas units instead of px:
+            
                 if let exportedSVGXMLDoc = drawingPageController?.fmDocument.exportCroppedSVG(includeBackground: includeBackground, croppingRectanglePx: croppingRectangle ?? self.bounds, croppingRectangleWithUnits: drawingPageController!.exportFrameWithUnitsNSRect, croppingRectangleUnits: drawingPageController!.exportFrameUnitsString)
                 {
                     data = exportedSVGXMLDoc.xmlData
                 }
                 */
-                
-                print("(croppingRectangle != self.bounds) COUNT:" + String(data.count));
-            }
+                }
         }
         
         

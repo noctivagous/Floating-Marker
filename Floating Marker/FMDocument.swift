@@ -1713,7 +1713,7 @@ class FMDocument: NSDocument, NSWindowDelegate {
         return svgDoc;
     }
     
-    func exportCroppedSVG(includeBackground:Bool,croppingRectanglePx:NSRect, croppingRectangleWithUnits:NSRect,croppingRectangleUnits:String) -> XMLDocument?
+    func exportCroppedSVG(includeBackground:Bool,croppingRectanglePx:NSRect, croppingRectangleWithUnits:NSRect,croppingRectangleUnits:String, exportHiddenLayers:Bool) -> XMLDocument?
     {
     
         let rootSVGElement = self.svgRootElement;
@@ -1746,8 +1746,11 @@ class FMDocument: NSDocument, NSWindowDelegate {
         
         for paperLayer in drawingPage.paperLayers
         {
-            let gNode = paperLayer.svgGNodeForCrop(croppingRectanglePx: croppingRectanglePx)
-            drawingPageGNode.addChild(gNode)
+            if(exportHiddenLayers || (paperLayer.isHidden == false))
+            {
+                let gNode = paperLayer.svgGNodeForCrop(croppingRectanglePx: croppingRectanglePx)
+                drawingPageGNode.addChild(gNode)
+            }
         }
         
         rootSVGElement.addChild(drawingPageGNode)
